@@ -2,6 +2,7 @@
 name:
 position:
 image_path:
-twitter:
-blurb:
+scholar:
+orcid:
+linkedin:
 ---
