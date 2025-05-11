@@ -21,10 +21,10 @@
     link: /
     new_window: true
 - links:
-  - name: Linkedin
+  - name: LinkedIn
     link: https://www.linkedin.com/company/linz-lab-for-in-silico-medical-interventions
     new_window: true
-    social_icon: Linkedin
+    social_icon: LinkedIn
   - name: YouTube
     link: https://www.youtube.com/channel/UCXBZ3ANX5YPfweSHWjEID1w
     social_icon: YouTube
