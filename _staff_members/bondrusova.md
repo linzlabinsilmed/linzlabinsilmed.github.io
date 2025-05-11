@@ -1,7 +1,6 @@
 ---
-name: Gerald Freeman
-position: Sales
+name: Beata Ondrusova
+position: Postdoctoral Fellow
 image_path: https://source.unsplash.com/collection/139386/603x603?a=.png
-twitter: CloudCannonApp
-blurb: Gerald loves going to bike rides and spending time with his family.
+scholar: https://scholar.google.com/scholar?hl=sk&as_sdt=0%2C5&q=beata+ondrusova&oq=beata
 ---
