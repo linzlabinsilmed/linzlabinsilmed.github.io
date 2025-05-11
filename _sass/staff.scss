@@ -20,10 +20,11 @@
 	}
 
 	.square-image {
-		width: 150px;
-		height: 150px;
+		width: 200px;
+		height: 200px;
 			img {
 				border-radius: 200px;
+				object-position: top;
 			}
 		}
 
