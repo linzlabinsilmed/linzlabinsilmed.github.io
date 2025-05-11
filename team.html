@@ -12,7 +12,7 @@ description: >-
 			<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
 			<div class="name">{{ person.name }}</div>
 			<div class="position">{{ person.position }}</div>
-  			<div class="media" style="display: flex; align-items: center;">
+  			<div class="media" style="display: flex; align-items: center; justify-content: center;">
 			{% if person.scholar %}
 				<a href="{{ person.scholar }}" target="_blank" title="Google Scholar">
 				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
