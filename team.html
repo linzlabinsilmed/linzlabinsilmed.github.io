@@ -1,3 +1,6 @@
+<head>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
 ---
 title: Our team
 description: >-
@@ -12,7 +15,7 @@ description: >-
 			<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
 			<div class="name">{{ person.name }}</div>
 			<div class="position">{{ person.position }}</div>
-			<div class=""><a href="{{person.scholar}}" class="fab fa-google-scholar"></a> </div>
+			<div class="content"><a href="{{person.scholar}}" class="fab fa-google-scholar"></a> </div>
 		</li>
 	{% endfor %}
 </ul>
