@@ -21,16 +21,12 @@
     link: /
     new_window: true
 - links:
-  - name: Facebook
-    link: https://facebook.com/cloudcannon/
+  - name: Linkedin
+    link: https://www.linkedin.com/company/linz-lab-for-in-silico-medical-interventions
     new_window: true
-    social_icon: Facebook
-  - name: Twitter
-    link: https://twitter.com/cloudcannon/
-    social_icon: Twitter
-    new_window: true
+    social_icon: Linkedin
   - name: YouTube
-    link: https://youtube.com/cloudcannon/
+    link: https://www.youtube.com/channel/UCXBZ3ANX5YPfweSHWjEID1w
     social_icon: YouTube
     new_window: true
   - name: RSS
