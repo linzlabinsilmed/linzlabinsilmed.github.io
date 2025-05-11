@@ -39,5 +39,8 @@
 	.media {
 		color: #666;
 		margin-top: 20px;
+		a:hover svg {
+  		fill: #4285F4;
+		}
 	}
 }
