@@ -1,4 +1,8 @@
-- name: News
+- name: Home
+  link: /index/
+  new_window: false
+  highlight: false
+  - name: News
   link: /news/
   new_window: false
   highlight: false
