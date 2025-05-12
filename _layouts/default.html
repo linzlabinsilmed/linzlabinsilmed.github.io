@@ -21,22 +21,26 @@
 		{% endif %}
 	</head>
 	<script>
-	  document.querySelectorAll('.accordion-header').forEach(header => {
-	    header.addEventListener('click', () => {
-	      const body = header.nextElementSibling;
-	      const isOpen = body.classList.contains('open');
+	  document.addEventListener('DOMContentLoaded', function () {
+	    const headers = document.querySelectorAll('.accordion-header');
 	
-	      // Close all bodies
-	      document.querySelectorAll('.accordion-body').forEach(b => {
-	        b.style.maxHeight = null;
-	        b.classList.remove('open');
+	    headers.forEach(header => {
+	      header.addEventListener('click', () => {
+	        const body = header.nextElementSibling;
+	        const icon = header.querySelector('.accordion-icon');
+	        const isOpen = body.classList.contains('open');
+	
+	        // Toggle current
+	        if (isOpen) {
+	          body.style.maxHeight = null;
+	          body.classList.remove('open');
+	          icon.textContent = '+';
+	        } else {
+	          body.classList.add('open');
+	          body.style.maxHeight = body.scrollHeight + 'px';
+	          icon.textContent = '−';
+	        }
 	      });
-	
-	      // Open the clicked body if it was not already open
-	      if (!isOpen) {
-	        body.classList.add('open');
-	        body.style.maxHeight = body.scrollHeight + 'px';
-	      }
 	    });
 	  });
 	</script>
