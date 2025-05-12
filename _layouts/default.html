@@ -20,6 +20,27 @@
 			<script async src='https://www.google-analytics.com/analytics.js'></script>
 		{% endif %}
 	</head>
+	<script>
+		document.querySelectorAll('.accordion-header').forEach(header => {
+	    	header.addEventListener('click', () => {
+	      	const body = header.nextElementSibling;
+	      	const isOpen = body.classList.contains('open');
+	
+	      	// Close all bodies
+	      	document.querySelectorAll('.accordion-body').forEach(b => {
+	        b.style.maxHeight = null;
+	        b.classList.remove('open');
+	        b.previousElementSibling.querySelector('.chevron').classList.remove('rotate');
+	      	});
+	
+	      	if (!isOpen) {
+	        	body.classList.add('open');
+	        	body.style.maxHeight = body.scrollHeight + 'px';
+	        	header.querySelector('.chevron').classList.add('rotate');
+	      	}
+	    	});
+	  	});
+	</script>
 	<body>
 		<header>
 			<div class="container">
