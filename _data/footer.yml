@@ -1,25 +1,17 @@
 - links:
-  - name: Pricing
-    link: /pricing/
-  - name: Blog
-    link: /blog/
-  - name: About
-    link: /about/
+  - name: News
+    link: /news/
+  - name: Projects
+    link: /projects/
+  - name: Team
+    link: /team/
+  - name: Publications
+    link: /publications/
+- links:
   - name: Contact
     link: /contact/
-- links:
-  - name: Login
-    link: /
-    new_window: true
-  - name: Sign Up
-    link: /
-    new_window: true
-  - name: Docs
-    link: /
-    new_window: true
-  - name: Status
-    link: /
-    new_window: true
+  - name: Join us
+    link: /joinus
 - links:
   - name: LinkedIn
     link: https://www.linkedin.com/company/linz-lab-for-in-silico-medical-interventions
