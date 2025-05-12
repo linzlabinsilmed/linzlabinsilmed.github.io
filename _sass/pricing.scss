@@ -1,4 +1,4 @@
-.custom-accordion {
+.accordion {
   max-width: 700px;
   margin: 2rem auto;
   border: 1px solid #ddd;
@@ -42,10 +42,12 @@
   padding: 1rem;
 }
 
-.chevron {
+.accordion-icon {
+  font-size: 1.2rem;
+  font-weight: bold;
   transition: transform 0.3s ease;
 }
 
-.rotate {
-  transform: rotate(180deg);
+.accordion-body.open + .accordion-header .accordion-icon {
+  transform: rotate(45deg);
 }
