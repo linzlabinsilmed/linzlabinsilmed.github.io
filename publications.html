@@ -10,7 +10,11 @@ description:
       <span class="accordion-icon">+</span>
     </button>
     <div class="accordion-body">
-      <p>Hydra is a flexible and customizable Jekyll template designed for product and marketing websites.</p>
+      <ul>
+      {% for paper in site.publications.ablation %}
+					<li>{{paper.title}}<a href="https://doi.org/{{paper.doi}}">{{paper.doi}}</a></li>
+					{% endfor %}
+      </ul>
     </div>
   </div>
 
