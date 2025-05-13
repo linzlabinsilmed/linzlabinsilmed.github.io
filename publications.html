@@ -11,9 +11,11 @@ description:
     </button>
     <div class="accordion-body">
       <ul>
-      {% for paper in site.publications.ablation %}
-					<li>{{paper.title}}<a href="https://doi.org/{{paper.doi}}">{{paper.doi}}</a></li>
-					{% endfor %}
+        {% for paper in site.data.publications %}
+    		{% if paper.category == "ablation" %}
+      			<li>{{ paper.title }} <a href="https://doi.org/{{ paper.doi }}">{{ paper.doi }}</a></li>
+    		{% endif %}
+  	{% endfor %}
       </ul>
     </div>
   </div>
