@@ -63,7 +63,7 @@ description:
 <ul>
 	{% for person in site.data.team.former_members %}
 		<li>
-			<div class="media" style="display: flex;">{{ person.name }}, {{ person.position }}, 
+			<div class="media" style="display: flex;"><strong>{{ person.name }}</strong>, {{ person.position }}	
 			{% if person.linkedin %}
 				<a href="{{ person.linkedin }}" target="_blank" title="LinkedIn">
 				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
