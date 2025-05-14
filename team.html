@@ -58,12 +58,11 @@ description:
 	{% endfor %}
 </ul>
 
-<h2 style="text-align: center;">Students (BSc &amp; MSc)</h2>
+<h3 style="text-align: center;">Students (BSc &amp; MSc)</h2>
 
 <ul>
 	{% for person in site.data.team.students %}
 		<li>
-<<<<<<< HEAD
 			<div class="media" style="display: flex; align-items: center; justify-content: center;">{{ person.name }}, {{ person.position }}, {{ person.years }}
 			{% if person.linkedin %}
 				<a href="{{ person.linkedin }}" target="_blank" title="LinkedIn">
@@ -84,9 +83,6 @@ description:
 	{% for person in site.data.team.former_members %}
 		<li>
 			<div class="media" style="display: flex; align-items: center; justify-content: center;">{{ person.name }}, {{ person.position }}, {{ person.years }}
-=======
-			<div class="media" style="display: flex;"><strong>{{ person.name }}</strong>, {{ person.position }} &nbsp;&nbsp;
->>>>>>> 0d97b0ad03218d1ef3f35e41a85d3db6edb61eff
 			{% if person.linkedin %}
 				<a href="{{ person.linkedin }}" target="_blank" title="LinkedIn">
 				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
