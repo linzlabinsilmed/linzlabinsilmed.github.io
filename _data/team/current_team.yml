@@ -1,0 +1,33 @@
+- name: Prof. Dr. Luca Gerardo-Giorda
+  position: Team Leader
+  image_path: https://www.jku.at/fileadmin/gruppen/188/LGG.jpg
+  scholar: https://scholar.google.com/citations?user=vvxgrNUAAAAJ
+  orcid: https://orcid.org/0000-0001-8467-1247
+  linkedin: https://at.linkedin.com/in/luca-gerardo-giorda-60265b1
+  email: luca.gerardo-giorda@jku.at
+- name: Dr. Argyrios Petras
+  position: Postdoctoral Fellow
+  image_path: https://www.oeaw.ac.at/fileadmin/Institute/RICAM/img/staff/apetras.png
+  scholar: https://scholar.google.com/citations?user=1X7VU_QAAAAJ
+  orcid: https://orcid.org/0000-0002-3278-620X
+  linkedin: https://at.linkedin.com/in/argyrios-petras-12954a3a
+  email: argyrios.petras@ricam.oeaw.ac.at
+- name: Dr. Beata Ondrusova
+  position: Postdoctoral Fellow
+  image_path: https://www.jku.at/fileadmin/_processed_/6/9/csm_Photo_OndrusovaBeata_7e247c684d.jpg
+  scholar: https://scholar.google.com/citations?user=wv-J6xoAAAAJ
+  orcid: https://orcid.org/0000-0003-0203-6245
+  linkedin: https://www.linkedin.com/in/beata-ondrusova/
+  email: beata.ondrusova@jku.at
+- name: Dr. Davide Baroli
+  position: Postdoctoral Fellow
+  image_path: https://i1.rgstatic.net/ii/profile.image/11431281154288331-1682761367523_Q512/Davide-Baroli-2.jpg
+  scholar: https://scholar.google.com/citations?user=zkf73VkAAAAJ
+  orcid: https://orcid.org/0000-0002-1889-145X
+  linkedin: https://at.linkedin.com/in/davide-baroli-46782742
+  email: davide.baroli@ricam.oeaw.ac.at
+- name: Minha Anees
+  position: PhD Student
+  image_path: https://www.oeaw.ac.at/fileadmin/Institute/RICAM/img/staff/manees.png
+  linkedin: https://at.linkedin.com/in/minha-anees-msc-012662196
+  email: minha.anees@ricam.oeaw.ac.at
