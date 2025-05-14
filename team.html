@@ -58,12 +58,12 @@ description:
 	{% endfor %}
 </ul>
 
-<h3 style="text-align: center;">Students (BSc &amp; MSc)</h2>
+<h2 style="text-align: center;">Students (BSc &amp; MSc)</h2>
 
 <ul>
 	{% for person in site.data.team.students %}
 		<li>
-			<div class="media" style="display: flex; align-items: center; justify-content: center;">{{ person.name }}, {{ person.position }}, {{ person.years }}
+			<div class="media" style="display: flex; align-items: center;">{{ person.name }}, {{ person.position }}, {{ person.years }}
 			{% if person.linkedin %}
 				<a href="{{ person.linkedin }}" target="_blank" title="LinkedIn">
 				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
@@ -77,12 +77,12 @@ description:
 	{% endfor %}
 </ul>
 
-<p style="text-align: center;">Former members</p>
+<h2 style="text-align: center;">Former members</h2>
 
 <ul>
 	{% for person in site.data.team.former_members %}
 		<li>
-			<div class="media" style="display: flex; align-items: center; justify-content: center;">{{ person.name }}, {{ person.position }}, {{ person.years }}
+			<div class="media" style="display: flex; align-items: center;">{{ person.name }}, {{ person.position }}, {{ person.years }}
 			{% if person.linkedin %}
 				<a href="{{ person.linkedin }}" target="_blank" title="LinkedIn">
 				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
