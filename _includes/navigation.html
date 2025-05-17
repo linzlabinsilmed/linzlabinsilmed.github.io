@@ -16,12 +16,18 @@
 			{% assign class = class | append: " active" %}
 		{% endif %}
 		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
-	        {% if link.children %}
-                        <ul class="submenu">
-                        {% for child in link.children %}
-                                <li><a href="{{ child.url }}">{{ child.title }}</a></li>
-                        {% endfor %}
-                        </ul>
-                {% endif %}
+	        {% if has_children %}
+      <!-- Arrow toggle -->
+      <button class="submenu-toggle" aria-label="Toggle submenu">
+        &#9662; <!-- ▼ or use an SVG/icon -->
+      </button>
+
+      <!-- Submenu list -->
+      <ul class="submenu">
+        {% for child in link.children %}
+          <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
         {% endfor %}
 </nav>
