@@ -84,3 +84,11 @@ nav {
 	}
 
 }
+
+.has-submenu > .submenu {
+  display: none;
+}
+
+.has-submenu:hover > .submenu {
+  display: block;
+}
