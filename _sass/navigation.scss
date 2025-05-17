@@ -85,10 +85,13 @@ nav {
 
 }
 
-.has-submenu > .submenu {
+.submenu {
   display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.has-submenu:hover > .submenu {
+.nav-item.active .submenu {
   display: block;
 }
