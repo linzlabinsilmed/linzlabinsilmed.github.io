@@ -44,13 +44,22 @@
 	    });
 	  });
 
-	document.querySelectorAll('.has-submenu > a').forEach(link => {
-            link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const submenu = this.nextElementSibling;
-            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-            });
-        });
+	document.querySelectorAll('[data-toggle="submenu"]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent navigating to "#"
+    
+    const parent = this.closest('.nav-item');
+    
+    // Optional: close other open submenus
+    document.querySelectorAll('.nav-item.has-submenu').forEach(item => {
+      if (item !== parent) item.classList.remove('active');
+    });
+
+    // Toggle the clicked submenu
+    parent.classList.toggle('active');
+  });
+});
+
 	</script>
 	<body>
 		<header>
