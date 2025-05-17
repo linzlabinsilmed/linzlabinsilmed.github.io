@@ -6,8 +6,9 @@ description:
 <ul>
   {% for post in site.data.rss %}
     <li>
-      <a href="{{ post.link }}">{{ post.title }}</a>
-      <p>{{ post.pubDate }}</p>
+      {{ post.attachments.content_html }}
+      <a href="{{ post.attachments.link }}">{{ post.attachments.title }}</a>
+      <p>{{ post.attachments.date_published }}</p>
     </li>
   {% endfor %}
 </ul>
