@@ -11,5 +11,12 @@
 			{% assign class = class | append: " active" %}
 		{% endif %}
 		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
-	{% endfor %}
+	        {% if item.children %}
+                        <ul class="submenu">
+                        {% for child in item.children %}
+                                <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+                        {% endfor %}
+                        </ul>
+                {% endif %}
+        {% endfor %}
 </nav>
