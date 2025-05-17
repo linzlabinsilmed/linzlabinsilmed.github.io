@@ -89,9 +89,17 @@ nav {
   display: none;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left: 1rem;
 }
 
 .nav-item.active .submenu {
   display: block;
+}
+
+.submenu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  font-size: 1rem;
 }
