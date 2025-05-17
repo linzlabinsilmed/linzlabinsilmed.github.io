@@ -18,9 +18,7 @@
 		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
 	        {% if has_children %}
       <!-- Arrow toggle -->
-      <button class="submenu-toggle" aria-label="Toggle submenu">
-        &#9662; <!-- ▼ or use an SVG/icon -->
-      </button>
+      <button class="submenu-toggle">&#9662;</button>
 
       <!-- Submenu list -->
       <ul class="submenu">
