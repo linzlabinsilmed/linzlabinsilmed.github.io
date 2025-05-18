@@ -16,6 +16,7 @@
 }
 
 nav {
+    display: flex;
 	text-transform: uppercase;
 	font-size: .8em;
 	width: 100%;
@@ -86,10 +87,8 @@ nav {
 }
 
 .nav-container {
-  display: flex;
   gap: 1rem; /* Optional spacing between links */
   align-items: center;
-  justify-content: flex-end;
   margin-left: auto;
   flex-wrap: wrap; /* Optional: allows wrapping on smaller screens */
 }
