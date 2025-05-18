@@ -87,6 +87,7 @@ nav {
 }
 
 .nav-container {
+  display: flex;
   gap: 1rem; /* Optional spacing between links */
   align-items: center;
   margin-left: auto;
