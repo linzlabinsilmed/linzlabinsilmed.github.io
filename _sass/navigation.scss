@@ -85,6 +85,17 @@ nav {
 
 }
 
+.nav-panel {
+        color: #fff;
+		text-decoration: none;
+		z-index: 1;
+		position: relative;
+
+		&:hover {
+			text-decoration: none;
+		}
+}
+
 .nav-toggle-button:hover .submenu {
   display: block;
 }
