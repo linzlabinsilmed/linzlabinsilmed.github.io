@@ -43,17 +43,12 @@
 	      });
 	    });
 	  });
-
-	document.querySelectorAll('.submenu-toggle').forEach(button => {
-  button.addEventListener('click', function (e) {
-    e.preventDefault();
-    e.stopPropagation(); // Prevent click from affecting link
-
-    const parent = this.closest('.nav-item');
-    parent.classList.toggle('active');
-  });
-});
-
+	  
+    document.querySelectorAll('.nav-toggle-button').forEach(button => {
+        button.addEventListener('click', function () {
+        this.closest('.nav-item').classList.toggle('active');
+        });
+    });
 
 	</script>
 	<body>
