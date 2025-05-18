@@ -85,6 +85,13 @@ nav {
 
 }
 
+.nav-container {
+  display: flex;
+  gap: 1rem; /* Optional spacing between links */
+  align-items: center;
+  flex-wrap: wrap; /* Optional: allows wrapping on smaller screens */
+}
+
 .nav-panel {
         color: #fff;
 		text-decoration: none;
