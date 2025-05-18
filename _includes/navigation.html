@@ -12,16 +12,7 @@
     {% if link.link == page.url %}
       {% assign class = class | append: " active" %}
     {% endif %}
-    <div class="nav-panel">
+    
     <a href="{% include relative-src.html src=link.link %}" class="{{ class }} {% if link.children %} nav-toggle-button {% endif %}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
-    </div>
-    {% if link.children %}
-        <ul class="submenu">
-          {% for child in link.children %}
-            <li><a href="{{ child.url }}">{{ child.title }}</a></li>
-          {% endfor %}
-        </ul>
-    {% endif %}
-  {% endfor %}
-  </div>
+
 </nav>

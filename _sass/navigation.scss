@@ -16,7 +16,6 @@
 }
 
 nav {
-    display: flex;
 	text-transform: uppercase;
 	font-size: .8em;
 	width: 100%;
@@ -86,33 +85,3 @@ nav {
 
 }
 
-.nav-container {
-  display: flex;
-  gap: 1rem; /* Optional spacing between links */
-  align-items: center;
-  margin-left: auto;
-  flex-wrap: wrap; /* Optional: allows wrapping on smaller screens */
-}
-
-.nav-panel {
-        color: #fff;
-		text-decoration: none;
-		z-index: 1;
-		position: relative;
-
-		&:hover {
-			text-decoration: none;
-		}
-}
-
-.nav-toggle-button:hover .submenu {
-  display: block;
-}
-
-/* For submenu */
-.submenu {
-  display: none;
-  list-style: none;
-  padding-left: 1rem;
-  margin: 0.5rem 0 0;
-}
