@@ -85,14 +85,14 @@ nav {
 
 }
 
+.nav-toggle-button:hover .submenu {
+  display: block;
+}
+
 /* For submenu */
 .submenu {
   display: none;
   list-style: none;
   padding-left: 1rem;
   margin: 0.5rem 0 0;
-}
-
-.submenu.active {
-  display: block;
 }
