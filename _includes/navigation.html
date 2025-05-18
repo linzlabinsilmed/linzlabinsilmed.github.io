@@ -1,33 +1,31 @@
 <nav>
-	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
-	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a>
-	{% for link in site.data.navigation %}
-		{% assign class = "" %}
+  <a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
+  <a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml">
+    <strong>&#9998;</strong> Edit navigation
+  </a>
 
-                {% if link.children %}
-                        {% assign class = class | append: "has-submenu " %}
-                {% endif %}
-	
-		{% if link.highlight %}
-			{% assign class = class | append: " highlight" %}
-		{% endif %}
+  {% for link in site.data.navigation %}
+    {% assign class = "" %}
+    {% if link.highlight %}
+      {% assign class = class | append: " highlight" %}
+    {% endif %}
+    {% if link.link == page.url %}
+      {% assign class = class | append: " active" %}
+    {% endif %}
 
-		{% if link.link == page.url %}
-			{% assign class = class | append: " active" %}
-		{% endif %}
-        
-        {% if link.children %}
-        <!-- Arrow toggle -->
-            <button class="{{ class }} submenu-toggle">{{ link.name }}</button>
-
-            <!-- Submenu list -->
-            <ul class="submenu">
-            {% for child in link.children %}
-                <li><a href="{{ child.url }}">{{ child.title }}</a></li>
-            {% endfor %}
-            </ul>
-        {% else %}
-            <a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
-        {% endif %}
-        {% endfor %}
+    <div class="nav-item">
+      {% if link.children %}
+        <button class="nav-toggle-button {{ class }}">{{ link.name }}</button>
+        <ul class="submenu">
+          {% for child in link.children %}
+            <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>
+          {{ link.name }}
+        </a>
+      {% endif %}
+    </div>
+  {% endfor %}
 </nav>
