@@ -13,7 +13,6 @@
       {% assign class = class | append: " active" %}
     {% endif %}
 
-    <div class="nav-item">
       {% if link.children %}
         <button class="nav-toggle-button {{ class }}">{{ link.name }}</button>
         <ul class="submenu">
@@ -26,6 +25,5 @@
           {{ link.name }}
         </a>
       {% endif %}
-    </div>
   {% endfor %}
 </nav>
