@@ -14,7 +14,7 @@
     {% endif %}
 
       {% if link.children %}
-        <button class="nav-toggle-button {{ class }}">{{ link.name }}</button>
+        <button class="{{ class }}">{{ link.name }}</button>
         <ul class="submenu">
           {% for child in link.children %}
             <li><a href="{{ child.url }}">{{ child.title }}</a></li>
