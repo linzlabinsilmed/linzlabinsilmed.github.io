@@ -30,7 +30,7 @@ async function autoScroll(page) {
     const page = await browser.newPage();
     await page.goto(LINKEDIN_URL, { waitUntil: 'networkidle2' });
     // Wait a bit for the pop-up to appear
-    await page.waitForTimeout(2000);
+    await new Promise(resolve => setTimeout(resolve, 2000));
     
     // Try to close the pop-up if it exists
     try {
