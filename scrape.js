@@ -27,8 +27,8 @@ async function autoScroll(page) {
       headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
-    const page = await browser.newPage();
-    await page.goto(LINKEDIN_URL, { waitUntil: 'networkidle2' });
+    const page1 = await browser.newPage();
+    await page1.goto(LINKEDIN_URL, { waitUntil: 'networkidle2' });
     const page = await browser.newPage();
     await page.goto(LINKEDIN_URL, { waitUntil: 'networkidle2' });
 
