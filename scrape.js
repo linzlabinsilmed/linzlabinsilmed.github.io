@@ -27,10 +27,21 @@ async function autoScroll(page) {
       headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
-    const page1 = await browser.newPage();
-    await page1.goto(LINKEDIN_URL, { waitUntil: 'networkidle2' });
     const page = await browser.newPage();
     await page.goto(LINKEDIN_URL, { waitUntil: 'networkidle2' });
+    // Wait a bit for the pop-up to appear
+    await page.waitForTimeout(2000);
+    
+    // Try to close the pop-up if it exists
+    try {
+      await page.evaluate(() => {
+        const closeBtn = document.querySelector('button[aria-label="Dismiss"]') ||
+                         document.querySelector('button[aria-label="Close"]');
+        if (closeBtn) closeBtn.click();
+      });
+    } catch (err) {
+      console.warn('No pop-up to close or error in closing it.');
+    }
 
     // Use improved scrolling to load posts
     await autoScroll(page);
