@@ -5,7 +5,7 @@ const LINKEDIN_URL = 'https://www.linkedin.com/company/linz-lab-for-in-silico-me
 
 async function autoScroll(page) {
   await page.evaluate(async () => {
-    await new Promise((resolve) => {
+    await new Promise(resolve => {
       let totalHeight = 0;
       const distance = 100;
       const timer = setInterval(() => {
@@ -27,6 +27,8 @@ async function autoScroll(page) {
       headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
+    await page.setViewport({ width: 1280, height: 800 });
     const page = await browser.newPage();
 
     await page.goto(LINKEDIN_URL, { waitUntil: 'networkidle2' });
