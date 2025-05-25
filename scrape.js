@@ -4,7 +4,9 @@ const puppeteer = require('puppeteer');
 const LINKEDIN_URL = 'https://www.linkedin.com/company/linz-lab-for-in-silico-medical-interventions';
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: 'new' });
+  const browser = await puppeteer.launch({
+  headless: true,
+  args: ['--no-sandbox', '--disable-setuid-sandbox']});
   const page = await browser.newPage();
 
   await page.goto(LINKEDIN_URL, { waitUntil: 'networkidle2' });
