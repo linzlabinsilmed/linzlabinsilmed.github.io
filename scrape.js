@@ -35,7 +35,7 @@ async function autoScroll(page) {
     await autoScroll(page);
 
     // Wait a bit to ensure content is loaded
-    await page.waitForTimeout(2000);
+    await new Promise(resolve => setTimeout(resolve, 2000));
 
     const posts = await page.evaluate(() => {
       const postElements = document.querySelectorAll('div.feed-shared-update-v2');
