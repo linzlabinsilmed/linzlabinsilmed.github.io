@@ -53,7 +53,7 @@ async function autoScroll(page) {
           if (json['@graph']) {
             json['@graph'].forEach(item => {
               if (item['@type'] === 'DiscussionForumPosting' && item.datePublished) {
-                publishedDates.push(item.datePublished);
+                publishedDates.push(item.datePublished.slice(0, 10));
               }
             });
           }
