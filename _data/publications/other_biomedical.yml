@@ -1,2 +1,6 @@
-- title: "My Research Paper"
-  doi: "10.1234/example"
+- title: "Barnafi, N. A., Petras, A., & Gerardo-Giorda, L. (2024). Fully nonlinear inverse poroelasticity: Stress-free configuration recovery. Computer Methods in Applied Mechanics and Engineering, 425, 116960."
+  doi: "10.1016/j.cma.2024.116960"
+- title: "Marinelli, I., Thompson, B. M., Parekh, V. S., Fletcher, P. A., Gerardo-Giorda, L., Sherman, A. S., Satin, L. S., & Bertram, R. (2022). Oscillations in K(ATP) conductance drive slow calcium oscillations in pancreatic β-cells. Biophysical Journal, 121(8), 1449–1464."
+  doi: "10.1016/j.bpj.2022.03.015"
+- title: "Dassi, F., Kroos, J. M., Gerardo-Giorda, L., & Perotto, S. (2022). A denoising tool for the reconstruction of cortical geometries from MRI. Mathematics and Computers in Simulation, 191, 14–32."
+  doi: "10.1016/j.matcom.2021.07.020"
