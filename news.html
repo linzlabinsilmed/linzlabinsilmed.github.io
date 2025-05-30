@@ -4,10 +4,9 @@ description:
 ---
 
 <ul>
-  {% for post in site.data.rss %}
+  {% for post in site.data.linkedin_feed %}
     <li>
       <a href="{{ post.link }}">{{ post.title }}</a>
-      <p>{{ post.date_published }}</p>
     </li>
   {% endfor %}
 </ul>

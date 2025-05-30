@@ -62,7 +62,7 @@ async function autoScroll(page) {
         });
       });
 
-      return data.slice(0, 5);
+      return data.slice(0, 10);
     });
 
     if (posts.length === 0) {
