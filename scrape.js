@@ -27,31 +27,35 @@ async function autoScroll(page) {
   try {
     const page = await browser.newPage();
 
-    // Go to LinkedIn company page
     const LINKEDIN_URL = 'https://www.linkedin.com/company/linz-lab-for-in-silico-medical-interventions';
     await page.goto(LINKEDIN_URL, { waitUntil: 'networkidle2' });
 
-    // Wait 2 seconds for pop-up to appear
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    await new Promise(r => setTimeout(r, 2000));
 
-    // Close pop-up if exists
+    // Close pop-up
     await page.evaluate(() => {
       const closeBtn = document.querySelector('button[aria-label="Dismiss"]') || document.querySelector('button[aria-label="Close"]');
       if (closeBtn) closeBtn.click();
     });
 
-    // Scroll to load posts
     await autoScroll(page);
+    await new Promise(r => setTimeout(r, 3000));
 
-    // Wait extra 3 seconds to ensure posts load
-    await new Promise(resolve => setTimeout(resolve, 3000));
+    // Debug screenshot + html dump
+    await page.screenshot({ path: 'debug_linkedin.png', fullPage: true });
+    const html = await page.content();
+    fs.writeFileSync('debug_linkedin.html', html);
 
-    // Wait for at least one post container
-    await page.waitForSelector('div.feed-shared-update-v2', { timeout: 8000 });
+    // Wait for any post container, more general selector
+    try {
+      await page.waitForSelector('div[class*="feed-shared-update"]', { timeout: 15000 });
+    } catch {
+      console.warn('⚠️ No posts found after waiting.');
+    }
 
-    // Extract posts data
+    // Scrape posts with broader selector
     const posts = await page.evaluate(() => {
-      const postElements = document.querySelectorAll('div.feed-shared-update-v2');
+      const postElements = document.querySelectorAll('div[class*="feed-shared-update"]');
       const data = [];
 
       postElements.forEach(post => {
