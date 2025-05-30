@@ -13,7 +13,8 @@ const fs = require('fs');
     waitUntil: 'networkidle2'
   });
 
-  await page.waitForTimeout(4000);
+ await new Promise(resolve => setTimeout(resolve, 4000));
+
 
   try {
     await page.evaluate(() => {
@@ -21,7 +22,7 @@ const fs = require('fs');
                        document.querySelector('button[aria-label="Close"]');
       if (closeBtn) closeBtn.click();
     });
-    await page.waitForTimeout(1000);
+    await new Promise(resolve => setTimeout(resolve, 4000));
   } catch {}
 
   await page.evaluate(() => {
@@ -40,7 +41,7 @@ const fs = require('fs');
     });
   });
 
-  await page.waitForTimeout(3000);
+  await new Promise(resolve => setTimeout(resolve, 4000));
 
   const posts = await page.evaluate(() => {
     const data = [];
