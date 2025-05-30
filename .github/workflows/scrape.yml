@@ -2,8 +2,8 @@ name: Scrape LinkedIn Posts
 
 on:
   schedule:
-    - cron: '0 0 * * *'  
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # Run daily at midnight UTC
+  workflow_dispatch:      # Allow manual trigger
 
 jobs:
   scrape:
@@ -24,10 +24,10 @@ jobs:
       - name: Run scraper
         run: npm run scrape
 
-      - name: Commit and push
+      - name: Commit and push scraped data
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add linkedin_feed.json debug_linkedin.html
+          git add _data/linkedin_feed.yml
           git commit -m "Update LinkedIn feed [auto]" || echo "No changes"
           git push
