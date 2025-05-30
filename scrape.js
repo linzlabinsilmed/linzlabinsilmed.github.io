@@ -4,31 +4,28 @@ const fs = require('fs');
 (async () => {
   const browser = await puppeteer.launch({
     headless: true,
-    executablePath: puppeteer.executablePath(), // ✅ this is critical in Actions
+    executablePath: puppeteer.executablePath(),
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
 
   const page = await browser.newPage();
-  await page.goto('https://www.linkedin.com/company/linz-lab-for-in-silico-medical-interventions', {
-    waitUntil: 'networkidle2'
+
+  // Go to the company page
+  const URL = 'https://www.linkedin.com/company/linz-lab-for-in-silico-medical-interventions';
+  await page.goto(URL, { waitUntil: 'networkidle2' });
+
+  // Wait for the pop-up to appear and close it
+  await page.waitForTimeout(2000);
+  await page.evaluate(() => {
+    const closeBtn = document.querySelector('button[aria-label="Dismiss"]') || document.querySelector('button[aria-label="Close"]');
+    if (closeBtn) closeBtn.click();
   });
 
- await new Promise(resolve => setTimeout(resolve, 4000));
-
-
-  try {
-    await page.evaluate(() => {
-      const closeBtn = document.querySelector('button[aria-label="Dismiss"]') ||
-                       document.querySelector('button[aria-label="Close"]');
-      if (closeBtn) closeBtn.click();
-    });
-    await new Promise(resolve => setTimeout(resolve, 4000));
-  } catch {}
-
+  // Scroll the page to load posts
   await page.evaluate(() => {
     return new Promise(resolve => {
       let totalHeight = 0;
-      const distance = 200;
+      const distance = 300;
       const timer = setInterval(() => {
         window.scrollBy(0, distance);
         totalHeight += distance;
@@ -41,15 +38,24 @@ const fs = require('fs');
     });
   });
 
-  await new Promise(resolve => setTimeout(resolve, 4000));
+  await page.waitForTimeout(3000); // Let feed load
 
+  // Try to wait for at least one post to appear
+  try {
+    await page.waitForSelector('div.feed-shared-update-v2', { timeout: 8000 });
+  } catch {
+    console.warn('⚠️ No posts found on page after timeout.');
+  }
+
+  // Extract post data
   const posts = await page.evaluate(() => {
+    const postElements = document.querySelectorAll('div.feed-shared-update-v2');
     const data = [];
-    const items = document.querySelectorAll('div.feed-shared-update-v2');
-    items.forEach(item => {
-      const textEl = item.querySelector('span[dir="ltr"]') || item.querySelector('span.break-words');
-      const linkEl = item.querySelector('a.app-aware-link');
-      const timeEl = item.querySelector('span.visually-hidden');
+
+    postElements.forEach(post => {
+      const textEl = post.querySelector('span[dir="ltr"]') || post.querySelector('span.break-words');
+      const linkEl = post.querySelector('a.app-aware-link');
+      const timeEl = post.querySelector('span.visually-hidden');
 
       if (textEl && linkEl && timeEl) {
         data.push({
@@ -59,9 +65,12 @@ const fs = require('fs');
         });
       }
     });
-    return data.slice(0, 5);
+
+    return data;
   });
 
-  fs.writeFileSync('linkedin_feed.json', JSON.stringify(posts, null, 2));
+  console.log(`✅ Extracted ${posts.length} posts`);
+  fs.writeFileSync('linkedin_feed.json', JSON.stringify(posts.slice(0, 5), null, 2));
+
   await browser.close();
 })();
