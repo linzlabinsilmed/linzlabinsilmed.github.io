@@ -2,7 +2,6 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 
 async function autoScroll(page) {
-  // Scroll slowly to load posts properly
   await page.evaluate(async () => {
     for (let i = 0; i < 20; i++) {
       window.scrollBy(0, 500);
@@ -23,10 +22,9 @@ async function autoScroll(page) {
     const LINKEDIN_URL = 'https://www.linkedin.com/company/linz-lab-for-in-silico-medical-interventions';
     await page.goto(LINKEDIN_URL, { waitUntil: 'networkidle2' });
 
-    // Wait some time for pop-ups to load
     await new Promise(r => setTimeout(r, 4000));
 
-    // Close any pop-up by clicking buttons with “Dismiss” or “Close” text
+    // Close pop-up by clicking buttons with “Dismiss” or “Close” text
     await page.evaluate(() => {
       const buttons = Array.from(document.querySelectorAll('button'));
       buttons.forEach(btn => {
@@ -37,38 +35,34 @@ async function autoScroll(page) {
       });
     });
 
-    // Scroll to load posts
     await autoScroll(page);
-
-    // Wait extra for posts to load after scrolling
     await new Promise(r => setTimeout(r, 4000));
 
-    // Save screenshot and HTML for debugging
+    // Save debug files to check what loaded
     await page.screenshot({ path: 'debug_linkedin.png', fullPage: true });
     const html = await page.content();
     fs.writeFileSync('debug_linkedin.html', html);
 
-    // Try selecting posts broadly - articles or divs with feed-shared-update in class name
     const posts = await page.evaluate(() => {
-      // Try article first, fallback to divs with feed-shared-update
-      let postElements = document.querySelectorAll('article');
-      if (!postElements.length) {
-        postElements = document.querySelectorAll('div[class*="feed-shared-update"]');
-      }
+      const anchors = document.querySelectorAll('a.main-feed-card__overlay-link');
       const data = [];
-      postElements.forEach(post => {
-        const titleEl = post.querySelector('span.break-words') || post.querySelector('span[dir="ltr"]');
-        const linkEl = post.querySelector('a.app-aware-link');
-        const timeEl = post.querySelector('span.visually-hidden');
 
-        if (titleEl && linkEl && timeEl) {
-          data.push({
-            title: titleEl.innerText.trim().slice(0, 300),
-            url: linkEl.href,
-            date: timeEl.innerText.trim()
-          });
-        }
+      anchors.forEach(anchor => {
+        const url = anchor.href;
+        const postContainer = anchor.closest('div.main-feed-card');
+        if (!postContainer) return;
+
+        const titleEl = postContainer.querySelector('span.break-words') ||
+                        postContainer.querySelector('p') ||
+                        postContainer.querySelector('span[dir="ltr"]');
+        const title = titleEl ? titleEl.innerText.trim().slice(0, 300) : '';
+
+        const timeEl = postContainer.querySelector('time') || postContainer.querySelector('span.visually-hidden');
+        const date = timeEl ? timeEl.innerText.trim() : '';
+
+        data.push({ title, url, date });
       });
+
       return data.slice(0, 5);
     });
 
@@ -78,6 +72,7 @@ async function autoScroll(page) {
       console.log(`✅ Extracted ${posts.length} posts`);
       fs.writeFileSync('linkedin_feed.json', JSON.stringify(posts, null, 2));
     }
+
   } catch (error) {
     console.error('Error during scraping:', error);
   } finally {
