@@ -7,7 +7,7 @@ description:
   {% for post in site.data.linkedin_feed %}
   <div style="margin-top: 3rem; margin-bottom: 3rem;">
     <article class="mb-8 border-b border-gray-300 pb-4">
-        <h3 class="text-xl font-semibold mb-2">{{ post.title | newline_to_br }}</h3>
+        <h3 class="text-xl font-semibold mb-2" style="overflow-wrap: break-word;">{{ post.title | newline_to_br }}</h3>
         <div   style="margin-top: 2rem;"/>
         {% if post.url %}
         <a href="{{ post.url }}" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
