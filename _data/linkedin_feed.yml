@@ -8,8 +8,19 @@
 
     We’re a relatively small research group, so we are truly happy and grateful
     for your support. We’ll continue sharing updates and highlights so you can
-    s…
-  url: https://www.linkedin.com/signup?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fresearchcommunity&trk=organization_guest_main-feed-card-text
+    stay in the loop on everything we’re working on.
+
+
+    Thank you for being a part of our journey! 🤗 
+
+
+    PS: If you have any suggestions, want to see something specific, or are
+    curious about our research, feel free to reach out 📬 - we’d love to hear
+    from you!
+
+
+    #ResearchCommunity #ThankYou #LabLife #AcademicResearch #Milestone
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_researchcommunity-thankyou-lablife-activity-7325534894435049473-ToPn
 - title: >-
     📄New Paper Alert!📄
 
@@ -17,8 +28,65 @@
     We are excited to share our first study on laser ablation in cardiac tissue
     in collaboration with Università Campus Bio-Medico di Roma! Laser ablation
     is a promising technique for treating cardiac arrhythmias, offering high
-    precision and minimal invasiveness. However, tradition…
-  url: https://it.linkedin.com/school/universita-campus-bio-medico/?trk=organization_guest_main-feed-card-text
+    precision and minimal invasiveness. However, traditional thermal models fall
+    short in predicting tissue response at fast time scales. As part of her PhD
+    work, Federica Bianconi designed a finite element computational model that
+    couples optical and thermal physics to better simulate how laser energy
+    interacts with heart tissue.
+
+
+    💡 What we did:
+
+    🔹 Developed a finite element model combining light propagation (using the
+    Optical Diffusion Approximation) with thermal bioheat transfer theories  -
+    including Fourier, Generalized Fourier, and a higher-order Dual Phase 
+
+    Lag (DPL) model.
+
+    🔹 Incorporated a three-state cell death model to map out how damage
+    progresses over time during laser ablation.
+
+    🔹Simulated cardiac tissue response and explored how tissue anisotropy
+    affects thermal spread.
+
+
+    🔎Key Insights from the Study:
+
+    🔹 The higher-order DPL model provides the most detailed and accurate
+    framework for predicting heat transfer in cardiac tissue.
+
+    🔹 Laser power modulation plays a crucial role in shaping lesion depth and 
+
+    precision - better control can minimize harm to surrounding healthy 
+
+    tissue.
+
+    🔹 Tissue fiber structure matters: anisotropic properties strongly
+    influence 
+
+    lesion geometry, reinforcing the need for personalized ablation strategies.
+
+
+    These advancements pave the way for personalised treatment planning and in
+    silico 💻 optimisation of laser ablation techniques. 
+
+
+    🤝 This work was made possible through the contributions of Massimiliano
+    Leoni, Argyrios Petras, Emiliano Schena, Luca Gerardo-Giorda, and Alessio
+    Gizzi.
+
+
+    We would like to congratulate Federica Bianconi on reaching this important
+    milestone and wish her continued success on her PhD journey! 👏 
+
+
+    📖 Read the full study here:
+
+    https://lnkd.in/eE-3DnzM
+
+
+    #LaserAblation #BiomedicalEngineering #ComputationalModeling #PaperAlert
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_laserablation-biomedicalengineering-computationalmodeling-activity-7323315229700915200-A8pR
 - title: >-
     🌟 TNF – MED Interaction 🌟 
 
@@ -26,8 +94,43 @@
     Our colleagues Luca Gerardo-Giorda and Beata Ondrusova had the opportunity
     to present our work at the 3rd “Forschungsinteraktion TNF – MED” event!
     🎤  This event aims to foster interdisciplinary collaboration between the
-    faculties of medicine, engineering, and natural s…
-  url: https://at.linkedin.com/in/luca-gerardo-giorda-60265b1?trk=organization_guest_main-feed-card-text
+    faculties of medicine, engineering, and natural sciences at Johannes Kepler
+    Universität Linz. 🤝 
+
+     
+
+    Luca Gerardo-Giorda shared insights into the group's work in the field of
+    cardiac ablation. Our focus is on patient-specific simulations of procedures
+    like RFA and PFA, aiming to understand the treatment at the patient level.
+    This year marks the start of our collaboration with Clemens Steinwender from
+    Kepler Universitätsklinikum GmbH, and we’ll share more exciting updates
+    soon! 
+
+
+    Beata Ondrusova presented our research on VV-ECMO, a life-saving treatment
+    for severe lung failure, conducted together with our clinical partners at
+    Kepler Universitätsklinikum GmbH - especially Jens Meier and Johannes
+    Szasz. 
+
+
+    Additionally, our group is working with Philip-Rudolf Rauch from Kepler
+    Universitätsklinikum GmbH to better understand the mechanisms driving
+    low-grade glioma progression.
+
+
+    As a technically oriented team, we deeply value our growing partnerships
+    with clinical experts 🏥  - these connections are key to ensuring our
+    research has a meaningful impact. We might find even more exciting
+    opportunities to collaborate within Johannes Kepler Universität Linz thanks
+    to events like this! 🤝 
+
+
+    Big thanks to the organisers for making this event happen and creating a
+    great space for knowledge sharing and building connections! 👏 
+
+
+    #JKU #KUK #Collaboration #PFA #RFA #ECMO
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_jku-kuk-collaboration-activity-7320416105208942593-YlVb
 - title: >-
     🚨 PhD Position Available 🚨 
 
@@ -35,14 +138,190 @@
     Join our Lab as a PhD Student! This fully funded position is part of the FFG
     Bridge project "Advanced Modelling of Pulse Field Ablation for Atrial
     Fibrillation", led by Argyrios Petras in collaboration with NumeriCor GmbH.
-    You’ll be based at the Johann Radon Institute …
-  url: https://at.linkedin.com/in/argyrios-petras-12954a3a?trk=organization_guest_main-feed-card-text
-- title: >-
+    You’ll be based at the Johann Radon Institute for Computational and Applied
+    Mathematics, Austrian Academy of Sciences (ÖAW) in Linz, Austria.
+
+
+    Your responsibilities:
+
+    🔹 Develop mathematical models for cardiac pulse field ablation
+
+    🔹 Validate models using tailored experimental data
+
+    🔹 Conduct numerical simulations using the finite element method on
+    geometries reconstructed from medical imaging data using proprietary
+    software from NumeriCor GmbH.
+
+
+    Your profile:
+
+    🎓 MSc in Biomedical Engineering, Applied Mathematics, Physics or a closely
+    related field
+
+    🫀  Experience in mathematical models for medical applications (desirable
+    experience in cardiac electrophysiology models)
+
+    💻 Experience with Python and/or C++ programming languages
+
+    🛠️ Familiarity or experience with openCARP software (desirable)
+
+
+    Want to join us?
+
+    📅 Apply by April 30, 2025: https://lnkd.in/e_v-44x6
+
+
+    📢 Know someone who might be a great fit? Please share this opportunity with
+    them!
+
+
+    #PhD #PhDPosition #ComputationalBiology #CardiacModeling #openCARP #PFA
+    #Linz
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_phd-phdposition-computationalbiology-activity-7317501934507102208-wLVX
+- title: |-
     🌟 23rd IACM Computational Fluids Conference! 🌟
 
+    Our group leader, Luca Gerardo-Giorda, recently presented our work at the 23rd IACM Computational Fluids Conference in Santiago de Chile. His talk focused on how we can optimize the performance of veno-venous extracorporeal membrane oxygenation (VV-ECMO) using patient-specific computational fluid dynamics (CFD) 🩸 🖥️ . He shared key insights from our research and discussed new directions for our future work.
 
-    Our group leader, Luca Gerardo-Giorda, recently presented our work at the
-    23rd IACM Computational Fluids Conference in Santiago de Chile. His talk
-    focused on how we can optimize the performance of veno-venous extracorporeal
-    membrane oxygenation (VV-E…
-  url: https://at.linkedin.com/in/luca-gerardo-giorda-60265b1?trk=organization_guest_main-feed-card-text
+    The 23rd IACM Computational Fluids Conference in Santiago de Chile was a great event, gathering worldwide experts in the field, who presented various numerical techniques, mathematical formulations, and applications, also in the biomedical field. It was a valuable opportunity to connect with the international CFD community, exchange ideas, and gain new insights that we can apply to our research. 
+
+    A big thank you to the organizers for their hard work in making the event a success and for creating a productive and welcoming environment for all attendees. 👏 
+
+    🔗 Link to the conference website: https://lnkd.in/enEb_8yu
+    🔗 Link to the conference abstract: https://lnkd.in/eZr-QWum 
+
+    #CFC2025 #VVECMO #PatientspecificCFD #BiomedicalEngineering #Research  #ConferenceHighlights
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_cfc2025-vvecmo-patientspecificcfd-activity-7315372893813563394--Xhe
+- title: >-
+    Our group leader, Luca Gerardo-Giorda, had the opportunity to chair session
+    A in the first edition of PFA 101 in Vienna! The event provided a great
+    platform for practical discussions and knowledge sharing about this
+    state-of-the-art technology. 
+
+
+    A big thank you to everyone involved in organizing this event, and we look
+    forward to future editions that will continue to explore the value of PFA!
+    👏
+
+     #PFA101 #PFA #EHRA2025 #MedTech
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_pfa101-pfa-ehra2025-activity-7313116387713929217-kNDj
+- title: >-
+    I would like to thank the chairs, faculty and audience for engaging
+    discussion at the 1st edition of PFA 101 in Vienna in colaboration with
+    #EHRA2025
+
+
+    Bor Kos, Lea Rems, Luca Gerardo-Giorda, Antoni Ivorra, Kars Neven MD PhD,
+    Dr. Devi G Nair, MD, FACC, FHRS, Helmut Pürerfellner, K.R. Julian Chun,
+    Rafael Davalos, Jacob Koruth, @Atul  Verma
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_is-a-single-lethal-electric-field-threshold-activity-7310707177533390851-twHH
+- title: >-
+    🌟 Is a single lethal electric field threshold sufficient to characterize
+    the lesion size in computational modeling of cardiac pulsed-field ablation
+    ❔🌟   
+
+
+    PFA is revolutionizing the treatment of cardiac arrhythmias, and although it
+    shows great promise, it's still a relatively new technology. Computational
+    models can help predict how the treatment affects heart tissue. Typically,
+    these models rely on identifying a lethal electric field threshold to
+    predict the lesion. However, discrepancies in predicted lesion anisotropy
+    ratios (width over depth) across recent studies continue to be a topic of
+    discussion. In our latest work, we evaluated the predicted lesion anisotropy
+    ratios using a PFA computational model by applying it to an open-chest in
+    vivo porcine model geometry.
+
+
+    💡 What we did:
+
+    🔹Developed a finite-element computational model based on a segmented swine
+    CT scan, mimicking the open-chest experimental setup.
+
+    🔹Tested different electric field thresholds (200–1000 V/cm) to see which
+    best predicts lesion depth and width.
+
+    🔹Analyzed lesion depth and width, comparing how well different thresholds
+    matched the actual experimental findings.
+
+
+    🔎  Key Insights from the Study: 
+
+    🔹A  single lethal electric field threshold is INSUFFICIENT to accurately
+    predict both lesion depth and width in cardiac PFA.
+
+    🔹The threshold between 270 and 500 V/cm accurately predicts lesion depth,
+    and a higher threshold between 790 and 1000 V/cm better captures the lesion
+    width. 
+
+
+    Want to learn more? Let’s connect here or chat at PFA101 this week!
+
+
+    📖 Read the full study here: https://lnkd.in/eDGdYkA5
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_welcome-back-join-us-in-welcoming-federica-activity-7308140236910333952-1EfL
+- title: >-
+    🌟Welcome Back🌟 
+
+
+    Join us in welcoming Federica Bianconi back to Linz Lab for In-Silico
+    Medical Interventions! Federica is a PhD student at Università Campus
+    Bio-Medico di Roma, working under the guidance of Alessio Gizzi. During her
+    first visit in the fall of 2023, she got hands-on experience with FEniCSx
+    (https://fenicsproject.org/) and successfully developed her cardiac laser
+    ablation application. Stay tuned – we'll be sharing her latest results
+    soon! 
+
+
+    We’re excited to have her with us and look forward to seeing her progress!
+    Welcome, Federica Bianconi!
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_new-research-alert-we-are-excited-to-activity-7305256226878083075-iIDi
+- title: >-
+    🔬 New Research Alert🔬
+
+
+    We are excited to share our latest study published in Scientific Reports!
+    Our PhD student Minha Anees Msc and colleagues from Linz Lab for In-Silico
+    Medical Interventions and Hospital de la Santa Creu i Sant Pau in Spain
+    explored how dispersive patch placement affects power dissipation during
+    radiofrequency ablation (RFA) for pulmonary vein isolation (PVI) - a widely
+    used treatment for atrial fibrillation. 
+
+
+    💡 What we did:
+
+    🔹 Developed a highly detailed 3D virtual patient model based on CT imaging
+    data
+
+    🔹Ran 80 computer simulations to test different dispersive patch positions
+    and power settings (25W vs. 90W)
+
+    🔹Analyzed power dissipation in cardiac and esophageal tissue to optimize
+    ablation safety and effectiveness
+
+
+    🔎  Key Insights from the Study: 
+
+    🔹Patch placement matters!  Placing the dispersive patch at the lower right
+    side of the anterior thorax reduces the esophageal power dissipation -
+    making it a good candidate location for avoiding esophageal tissue injury.
+
+    🔹Wall thickness matters! High-power ablations can effectively create
+    transmural lesions in thin tissues, while in thicker tissues, increased
+    tissue power alone isn't enough - thermal conduction is crucial for driving
+    the lesion deeper.
+
+
+    Our in-silico study, based on detailed patient CT data, provides new
+    insights into electric field distribution during RFA. These findings could
+    help refine clinical protocols and improve patient outcomes.
+
+
+    A big congratulations to our colleagues, and especially to Minha Anees Msc,
+    for this achievement! 👏 Wishing her all the best as she continues her PhD
+    journey.
+
+
+    📖 Read the full study here:
+
+    https://lnkd.in/e7Geyn9a
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_femma-activity-7302719539497086976-6YC-
