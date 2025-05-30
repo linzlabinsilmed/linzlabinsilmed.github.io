@@ -6,6 +6,9 @@ description:
 <div class="space-y-12">
   {% for post in site.data.linkedin_feed %}
   <div style="margin-top: 3rem; margin-bottom: 3rem;">
+    <div style="margin-bottom: 3rem;">
+        <h2> {{ post.published }}</h2>
+    </div>
     <article class="mb-8 border-b border-gray-300 pb-4">
         <h3 class="text-xl font-semibold mb-2" style="overflow-wrap: break-word;">{{ post.title | newline_to_br }}</h3>
         <div   style="margin-top: 2rem;"/>
