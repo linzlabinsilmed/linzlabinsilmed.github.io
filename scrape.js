@@ -43,6 +43,25 @@ async function autoScroll(page) {
 
     // Extract posts
     const posts = await page.evaluate(() => {
+    
+    const scriptTags = Array.from(document.querySelectorAll('script[type="application/ld+json"]'));
+      let publishedDates = [];
+
+      for (const script of scriptTags) {
+        try {
+          const json = JSON.parse(script.textContent);
+          if (json['@graph']) {
+            json['@graph'].forEach(item => {
+              if (item['@type'] === 'DiscussionForumPosting' && item.datePublished) {
+                publishedDates.push(item.datePublished);
+              }
+            });
+          }
+        } catch (e) {
+          // Skip invalid JSON blocks
+        }
+      }
+        
     const texts = Array.from(document.querySelectorAll('div.attributed-text-segment-list__container > p.attributed-text-segment-list__content'))
         .map(p => p.innerText.trim());
 
@@ -56,7 +75,8 @@ async function autoScroll(page) {
     for (let i = 0; i < count; i++) {
         data.push({
         title: texts[i],
-        url: links[i]
+        url: links[i],
+        published: publishedDates[i]
         });
     }
 
