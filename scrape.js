@@ -43,29 +43,24 @@ async function autoScroll(page) {
 
     // Extract posts
     const posts = await page.evaluate(() => {
-    // Select all main post containers that wrap both link and text
-    const postContainers = document.querySelectorAll('div.feed-shared-update-v2, div.some-parent-selector'); // Adjust selector if needed
+    const texts = Array.from(document.querySelectorAll('div.attributed-text-segment-list__container > p.attributed-text-segment-list__content'))
+        .map(p => p.innerText.trim());
+
+    const links = Array.from(document.querySelectorAll('div[data-id="entire-feed-card-link"] a.main-feed-card__overlay-link'))
+        .map(a => a.href);
 
     const data = [];
 
-    postContainers.forEach(container => {
-        const textContainer = container.querySelector('div.attributed-text-segment-list__container');
-        const paragraph = textContainer?.querySelector('p.attributed-text-segment-list__content');
-        const text = paragraph ? paragraph.innerText.trim() : '';
+    const count = Math.min(texts.length, links.length, 10);
 
-        const linkContainer = container.querySelector('div[data-id="entire-feed-card-link"]');
-        const linkEl = linkContainer?.querySelector('a.main-feed-card__overlay-link');
-        const url = linkEl ? linkEl.href : '';
-
-        if (text && url) {
+    for (let i = 0; i < count; i++) {
         data.push({
-            title: text,
-            url,
+        title: texts[i],
+        url: links[i]
         });
-        }
-    });
+    }
 
-    return data.slice(0, 10);
+    return data;
     });
 
 
