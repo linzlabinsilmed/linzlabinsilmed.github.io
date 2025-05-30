@@ -9,7 +9,38 @@ map:
   address: "Altenbergerstrasse 69, 4040 Linz, Austria"
   zoom: 13
 ---
-<div class="map" id="map"></div>
+<!-- Map Container -->
+<div class="map" id="map" style="height: 400px;"></div>
+
+<!-- Leaflet CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  window.mapData = {{ page.map | jsonify }};
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const map = L.map("map", {
+      scrollWheelZoom: false,
+      dragging: true,
+    }).setView([window.mapData.latitude, window.mapData.longitude], window.mapData.zoom);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+    }).addTo(map);
+
+    L.marker([window.mapData.latitude, window.mapData.longitude])
+      .addTo(map)
+      .bindPopup(window.mapData.address)
+      .openPopup();
+  });
+</script>
+
 
 
 <div class="contact-box">
@@ -38,141 +69,3 @@ map:
 	</div>
 </div>
 
-<script type="text/javascript">
-	window.mapData = {{ page.map | jsonify }};
-
-	function initMap() {
-		var myOptions = {
-			scrollwheel: false,
-			draggable: false,
-			panControl: false,
-			disableDefaultUI: true,
-			styles: [{
-				"featureType": "all",
-				"elementType": "labels.text.fill",
-				"stylers": [{
-					"saturation": 36
-				}, {
-					"color": "#000000"
-				}, {
-					"lightness": 40
-				}]
-			}, {
-				"featureType": "all",
-				"elementType": "labels.text.stroke",
-				"stylers": [{
-					"visibility": "on"
-				}, {
-					"color": "#000000"
-				}, {
-					"lightness": 16
-				}]
-			}, {
-				"featureType": "all",
-				"elementType": "labels.icon",
-				"stylers": [{
-					"visibility": "off"
-				}]
-			}, {
-				"featureType": "administrative",
-				"elementType": "geometry.fill",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 20
-				}]
-			}, {
-				"featureType": "administrative",
-				"elementType": "geometry.stroke",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 17
-				}, {
-					"weight": 1.2
-				}]
-			}, {
-				"featureType": "landscape",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 20
-				}]
-			}, {
-				"featureType": "poi",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 21
-				}]
-			}, {
-				"featureType": "road.highway",
-				"elementType": "geometry.fill",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 17
-				}]
-			}, {
-				"featureType": "road.highway",
-				"elementType": "geometry.stroke",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 29
-				}, {
-					"weight": 0.2
-				}]
-			}, {
-				"featureType": "road.arterial",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 18
-				}]
-			}, {
-				"featureType": "road.local",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 16
-				}]
-			}, {
-				"featureType": "transit",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 19
-				}]
-			}, {
-				"featureType": "water",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 17
-				}]
-			}],
-			zoom: window.mapData.zoom,
-			maxZoom: window.mapData.zoom,
-			minZoom: window.mapData.zoom,
-			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-		map = new google.maps.Map(document.getElementById("map"), myOptions);
-		marker = new google.maps.Marker({
-			map: map,
-			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
-		});
-
-		google.maps.event.addDomListener(window, "resize", function () {
-			map.setCenter(myOptions.center);
-		});
-	}
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
