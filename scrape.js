@@ -43,27 +43,31 @@ async function autoScroll(page) {
 
     // Extract posts
     const posts = await page.evaluate(() => {
-      const containers = document.querySelectorAll(
-        'div.attributed-text-segment-list__container'
-      );
-      const data = [];
+    // Select all main post containers that wrap both link and text
+    const postContainers = document.querySelectorAll('div.feed-shared-update-v2, div.some-parent-selector'); // Adjust selector if needed
 
-      containers.forEach(container => {
-        const paragraph = container.querySelector('p.attributed-text-segment-list__content');
-        if (!paragraph) return;
+    const data = [];
 
-        const text = paragraph.innerText.trim();
-        const linkEl = paragraph.querySelector('a[href^="http"]');
-        const postUrl = linkEl ? linkEl.href : null;
+    postContainers.forEach(container => {
+        const textContainer = container.querySelector('div.attributed-text-segment-list__container');
+        const paragraph = textContainer?.querySelector('p.attributed-text-segment-list__content');
+        const text = paragraph ? paragraph.innerText.trim() : '';
 
+        const linkContainer = container.querySelector('div[data-id="entire-feed-card-link"]');
+        const linkEl = linkContainer?.querySelector('a.main-feed-card__overlay-link');
+        const url = linkEl ? linkEl.href : '';
+
+        if (text && url) {
         data.push({
-          title: text.slice(0, 300) + (text.length > 300 ? '…' : ''),
-          url: postUrl || '',
+            title: text,
+            url,
         });
-      });
-
-      return data.slice(0, 10);
+        }
     });
+
+    return data.slice(0, 10);
+    });
+
 
     if (posts.length === 0) {
       console.warn('⚠️ No posts found!');
