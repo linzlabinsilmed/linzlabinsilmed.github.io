@@ -15,7 +15,7 @@ const fs = require('fs');
   await page.goto(URL, { waitUntil: 'networkidle2' });
 
   // Wait for the pop-up to appear and close it
-  await page.waitForTimeout(2000);
+  await new Promise(resolve => setTimeout(resolve, 3000));
   await page.evaluate(() => {
     const closeBtn = document.querySelector('button[aria-label="Dismiss"]') || document.querySelector('button[aria-label="Close"]');
     if (closeBtn) closeBtn.click();
@@ -38,7 +38,8 @@ const fs = require('fs');
     });
   });
 
-  await page.waitForTimeout(3000); // Let feed load
+  await new Promise(resolve => setTimeout(resolve, 3000));
+ // Let feed load
 
   // Try to wait for at least one post to appear
   try {
