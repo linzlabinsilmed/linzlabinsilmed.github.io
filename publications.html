@@ -130,8 +130,8 @@ description:
     <div class="accordion-body">
       <ul>
         {% for paper in site.data.publications.bsc_thesis %}
-      			<li style="margin-bottom: 1rem;">{{ paper.title }} <a href="https://doi.org/{{ paper.doi }}">{{ paper.doi }}</a></li>
-  	{% endfor %}
+      			<li style="margin-bottom: 1rem;">{{ paper.title }}<br>{{ paper.author }}<br>{{ paper.year }}</li>
+  	    {% endfor %}
       </ul>
     </div>
   </div>
