@@ -89,6 +89,8 @@ description:
   </div>
 </div>
 
+<div style="margin-bottom: 2rem;" ></div>
+
 <h2> Student thesis </h2>
 
 <div class="accordion">
@@ -99,7 +101,7 @@ description:
     </button>
     <div class="accordion-body">
       <ul>
-        {% for paper in site.data.publications.cardiovascular %}
+        {% for paper in site.data.publications.phd_thesis %}
       			<li style="margin-bottom: 1rem;">{{ paper.title }} <a href="https://doi.org/{{ paper.doi }}">{{ paper.doi }}</a></li>
   	{% endfor %}
       </ul>
@@ -113,7 +115,7 @@ description:
     </button>
     <div class="accordion-body">
       <ul>
-        {% for paper in site.data.publications.other_biomedical %}
+        {% for paper in site.data.publications.msc_thesis %}
       			<li style="margin-bottom: 1rem;">{{ paper.title }} <a href="https://doi.org/{{ paper.doi }}">{{ paper.doi }}</a></li>
   	{% endfor %}
       </ul>
@@ -127,7 +129,7 @@ description:
     </button>
     <div class="accordion-body">
       <ul>
-        {% for paper in site.data.publications.other %}
+        {% for paper in site.data.publications.bsc_thesis %}
       			<li style="margin-bottom: 1rem;">{{ paper.title }} <a href="https://doi.org/{{ paper.doi }}">{{ paper.doi }}</a></li>
   	{% endfor %}
       </ul>
