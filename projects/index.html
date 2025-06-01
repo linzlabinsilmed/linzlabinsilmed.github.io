@@ -3,9 +3,18 @@ title: Current projects
 description: 
 ---
 
-<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage current projects</a></p>
-<ul class="staff">
-	{% for project in site.data.projects %}
-
-	{% endfor %}
-</ul>
+<div class="content">
+{% for project in site.data.projects %}
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2><strong>{{ projects.title }}</strong></h2>
+				<p>{{ projects.description }}</p>
+			</div>
+			<div class="image">
+				<img src="{{ projects.image }}" alt="Screenshot" class="screenshot editable" />
+			</div>
+		</div>
+	</section>
+{% endfor %}
+</div>
