@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Hydra Template
-url: "https://proud-alligator.cloudvent.net"
+title: 
+url: 
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -10,15 +10,14 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: https://media.licdn.com/dms/image/v2/D4D22AQE0bpILKPbcpA/feedshare-shrink_800/feedshare-shrink_800/0/1729857744035?e=2147483647&v=beta&t=2wl90hcUp2y4KZmIM71EkCzNjCagTzMy6C0gNLiAdqk
-description: Product marketing template for Jekyll.
+description: 
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Hydra Template
+  name: 
   links:
-    - https://github.com/CloudCannon/hydra-jekyll-template
 
 # -----
 # Build
