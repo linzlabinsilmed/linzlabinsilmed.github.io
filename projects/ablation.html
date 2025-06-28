@@ -4,15 +4,12 @@ description: In-silico modelling of ablation treatments with specific focus on c
 ---
 
 <div class="content">
-{% for project in site.data.projects_overview %}
+{% for project in site.data.projects.ablation %}
 	<section>
 		<div class="container flex">
 			<div class="text editable">
 				<h2><strong>{{ project.title }}</strong></h2>
 				<p>{{ project.description }}</p>
-			</div>
-			<div class="image">
-				<img src="{{ project.image }}" class="screenshot editable" />
 			</div>
 		</div>
 	</section>
