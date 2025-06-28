@@ -4,8 +4,8 @@
   description: RFA employs thermal energy to eliminate aberrant electrical pathways in the heart by heating and destroying targeted tissue. In contrast, PFA uses high-voltage electric pulses to induce irreversible electroporation, selectively disrupting myocardial cells while minimizing damage to surrounding tissues such as nerves and blood vessels.
 - title: The Role of In-Silico Modelling
   description: |
-  Our team develops in-silico models to replicate the electrical, thermal, and electroporation effects of ablation energy within detailed, patient-specific cardiac anatomies, accounting for tissue heterogeneity and complex biophysical processes. These simulations enable in-depth analysis of lesion formation and energy delivery. They allow us to explore how different procedural settings such as energy dose, pulse duration, and electrode positioning affect treatment outcomes. This understanding is essential for optimizing efficacy, minimizing collateral damage, and ensuring patient safety. 
-  
+  Our team develops in-silico models to replicate the electrical, thermal, and electroporation effects of ablation energy within detailed, patient-specific cardiac anatomies, accounting for tissue heterogeneity and complex biophysical processes. These simulations enable in-depth analysis of lesion formation and energy delivery. They allow us to explore how different procedural settings such as energy dose, pulse duration, and electrode positioning affect treatment outcomes. This understanding is essential for optimizing efficacy, minimizing collateral damage, and ensuring patient safety.
+
   Working closely with cardiologists, we aim to deepen our understanding of lesion formation and help shape the future of cardiac electrophysiology by developing simulations that improve treatment planning and support more personalized patient care.
 - title: Team and Collaborators
 - title: Publications
