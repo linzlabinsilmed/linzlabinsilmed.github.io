@@ -1,0 +1,20 @@
+---
+title: Ablation treatments
+description: In-silico modelling of ablation treatments with specific focus on cardiac applications of radiofrequency and pulsed field ablation procedures
+---
+
+<div class="content">
+{% for project in site.data.projects_overview %}
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2><strong>{{ project.title }}</strong></h2>
+				<p>{{ project.description }}</p>
+			</div>
+			<div class="image">
+				<img src="{{ project.image }}" class="screenshot editable" />
+			</div>
+		</div>
+	</section>
+{% endfor %}
+</div>
