@@ -1,0 +1,14 @@
+- title: Motivation
+  description: Extracorporeal membrane oxygenation (ECMO) is a form of advanced life support used in critical care when conventional therapies are no longer sufficient to sustain life. By temporarily replacing the function of the lungs or heart, ECMO provides a bridge to recovery, transplantation, or further intervention in patients with severe respiratory or cardiac failure. Its use has expanded significantly in recent years, especially during global health crises such as the COVID-19 pandemic, where mainly Veno-Venous ECMO (VV-ECMO) played a key role in managing life-threatening respiratory failure.
+
+- title: What is VV-ECMO?
+  description: In VV-ECMO, blood is drained from a central vein, oxygenated externally, and returned to the venous system, bypassing the diseased lungs and maintaining adequate oxygenation and carbon dioxide removal. In VV-ECMO, effective oxygenation depends on delivering oxygenated blood to the body without it being immediately drawn back into the ECMO circuit - a problem known as recirculation. Recirculation reduces the efficiency of gas exchange, as oxygenated blood re-enters the circuit instead of circulating through the body, making it harder to achieve adequate systemic oxygen levels.
+
+- title: The Role of In-Silico Modelling
+  description: Our team develops in-silico models to simulate the complex interactions between the VV-ECMO system and the patient’s cardiopulmonary physiology. These models integrate anatomical data and known physiological properties and allows us to study blood flow dynamics, recirculation and oxygen transport under various clinical settings. <br><br>Through close collaboration with clinicians in the intensive care unit (ICU), we aim to bridge the gap between computational simulations and clinical practice, contributing to more effective use of ECMO in critical care.
+  
+- title: Team and Collaborators
+
+- title: Publications
+
+- title: Funding and Support
