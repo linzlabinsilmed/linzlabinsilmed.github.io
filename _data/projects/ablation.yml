@@ -24,7 +24,7 @@
       image_path:
 
 - title: Publications
-  publications: site.data.publications.ablation
+  publications: true
 
 - title: Funding and Support
   images:
