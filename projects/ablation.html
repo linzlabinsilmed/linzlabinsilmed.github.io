@@ -21,6 +21,17 @@ description: In-silico modelling of ablation treatments with specific focus on c
 					{% endfor %}
 					</ul>
 				{% endif %}
+				{% if project.collaborators %}
+					<ul class="staff">
+					{% for person in project.members %}
+						<li>
+							<div class="square-image" style="height:150px;width:150px;"><a href="mailto:{{ person.email }}"  target="_blank" ><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}" style="height: 187.5px;width: auto;border-radius: 150px;object-position: top;"/></a></div>
+							<div class="name">{{ person.name }}</div>
+							<div class="position">{{ person.institute }}</div>
+						</li>
+					{% endfor %}
+					</ul>
+				{% endif %}
 				{% if project.publications %}
 					<div class="container flex">
 					<ul>
