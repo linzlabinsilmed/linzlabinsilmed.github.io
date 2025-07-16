@@ -11,7 +11,7 @@ description: In-silico modelling of ablation treatments with specific focus on c
 				<h2><strong>{{ project.title }}</strong></h2>
 				<p>{{ project.description }}</p>
 				{% if project.publications %}
-					<div class="accordion-body">
+					<div class="container flex">
 					<ul>
 				        {% for paper in site.data.publications.ablation %}
 				      		<li style="margin-bottom: 1rem;">{{ paper.title }} <a href="https://doi.org/{{ paper.doi }}">{{ paper.doi }}</a></li>
