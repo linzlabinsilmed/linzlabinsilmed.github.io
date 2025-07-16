@@ -7,7 +7,7 @@
 - title: The Role of In-Silico Modelling
   description: Our team develops in-silico models to replicate the electrical, thermal, and electroporation effects of ablation energy within detailed, patient-specific cardiac anatomies, accounting for tissue heterogeneity and complex biophysical processes. These simulations enable in-depth analysis of lesion formation and energy delivery. They allow us to explore how different procedural settings such as energy dose, pulse duration, and electrode positioning affect treatment outcomes. This understanding is essential for optimizing efficacy, minimizing collateral damage, and ensuring patient safety.<br><br>Working closely with cardiologists, we aim to deepen our understanding of lesion formation and help shape the future of cardiac electrophysiology by developing simulations that improve treatment planning and support more personalized patient care.
   
-- title: Team and Main Collaborators
+- title: Team Members
   members:
     - name: Dr. Argyrios Petras
       position: Postdoctoral Fellow
@@ -17,6 +17,8 @@
       position: PhD Student
       image_path: https://www.oeaw.ac.at/fileadmin/Institute/RICAM/img/staff/manees.png
       email: minha.anees@ricam.oeaw.ac.at
+      
+- title: Main Collaborators
   collaborators:
     - name: Prof. Jose M. Guerra, MD
       institute: Hospital de la Santa Creu i San Pau
