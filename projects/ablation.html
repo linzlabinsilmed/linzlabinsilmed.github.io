@@ -11,9 +11,11 @@ description: In-silico modelling of ablation treatments with specific focus on c
 				<h2><strong>{{ project.title }}</strong></h2>
 				<p>{{ project.description }}</p>
 				{% if project.images %}
+					<div class="container flex">
 					{% for image in project.images %}
-             					<img src="{{ image }}" style="height:50px; width:auto;"/>
+             						<img src="{{ image }}" style="height:70px; width:auto;"/>
            				{% endfor %}
+					</div>
 				{% endif %}
 			</div>
 		</div>
