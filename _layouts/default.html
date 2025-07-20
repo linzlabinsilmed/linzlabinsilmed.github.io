@@ -21,8 +21,11 @@
 		{% endif %}
 	</head>
 	<script>
-	  document.addEventListener('DOMContentLoaded', function () {
-	    const headers = document.querySelectorAll('.accordion-header');
+		
+	  // Navigation JavaScript - Integrated with existing Jekyll structure
+	document.addEventListener('DOMContentLoaded', function() {
+
+	  const headers = document.querySelectorAll('.accordion-header');
 	
 	    headers.forEach(header => {
 	      header.addEventListener('click', () => {
@@ -42,7 +45,96 @@
 	        }
 	      });
 	    });
+		
+	  // Existing mobile menu functionality
+	  const navToggle = document.getElementById('open-nav');
+	  const body = document.body;
+	  const mobileMenu = document.getElementById('mobile-menu');
+	
+	  if (navToggle) {
+	    navToggle.addEventListener('click', function(e) {
+	      e.preventDefault();
+	      body.classList.toggle('nav-open');
+	    });
+	  }
+	
+	  // Desktop dropdown functionality for all dropdowns
+	  const dropdowns = document.querySelectorAll('.dropdown');
+	  dropdowns.forEach(function(dropdown) {
+	    const trigger = dropdown.querySelector('.dropdown-trigger');
+	    const menu = dropdown.querySelector('.dropdown-menu');
+	
+	    if (trigger && menu) {
+	      trigger.addEventListener('click', function(e) {
+	        e.preventDefault();
+	        e.stopPropagation();
+	        
+	        // Close other dropdowns
+	        dropdowns.forEach(function(otherDropdown) {
+	          if (otherDropdown !== dropdown) {
+	            otherDropdown.classList.remove('active');
+	          }
+	        });
+	        
+	        dropdown.classList.toggle('active');
+	      });
+	    }
 	  });
+	
+	  // Close dropdowns when clicking outside
+	  document.addEventListener('click', function(e) {
+	    dropdowns.forEach(function(dropdown) {
+	      if (!dropdown.contains(e.target)) {
+	        dropdown.classList.remove('active');
+	      }
+	    });
+	  });
+	
+	  // Close dropdowns on escape key
+	  document.addEventListener('keydown', function(e) {
+	    if (e.key === 'Escape') {
+	      dropdowns.forEach(function(dropdown) {
+	        dropdown.classList.remove('active');
+	      });
+	    }
+	  });
+	
+	  // Mobile dropdown functionality
+	  const mobileDropdowns = document.querySelectorAll('.mobile-dropdown');
+	  mobileDropdowns.forEach(function(mobileDropdown) {
+	    const trigger = mobileDropdown.querySelector('.mobile-dropdown-trigger');
+	    const menu = mobileDropdown.querySelector('.mobile-dropdown-menu');
+	
+	    if (trigger && menu) {
+	      trigger.addEventListener('click', function(e) {
+	        e.preventDefault();
+	        mobileDropdown.classList.toggle('active');
+	      });
+	    }
+	  });
+	
+	  // Close mobile menu when clicking on links
+	  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link, .mobile-dropdown-item');
+	  mobileNavLinks.forEach(function(link) {
+	    link.addEventListener('click', function() {
+	      body.classList.remove('nav-open');
+	      mobileDropdowns.forEach(function(dropdown) {
+	        dropdown.classList.remove('active');
+	      });
+	    });
+	  });
+	
+	  // Handle window resize
+	  window.addEventListener('resize', function() {
+	    const midPoint = 768; // Adjust based on your $mid-point variable
+	    if (window.innerWidth >= midPoint) {
+	      body.classList.remove('nav-open');
+	      mobileDropdowns.forEach(function(dropdown) {
+	        dropdown.classList.remove('active');
+	      });
+	    }
+	  });
+	});
 	  
 	</script>
 	<body>
