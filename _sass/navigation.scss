@@ -1,3 +1,5 @@
+// Navigation Styles - Integrated with existing Jekyll structure
+
 .nav-open nav {
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
 	padding: 10px 0;
@@ -13,12 +15,18 @@
 			display: inline;
 		}
 	}
+
+	// Show mobile menu when nav is open
+	.mobile-menu {
+		max-height: 500px;
+	}
 }
 
 nav {
 	text-transform: uppercase;
 	font-size: .8em;
 	width: 100%;
+	position: relative;
 
 	@media #{$mid-point} {
 		text-align: right;
@@ -27,7 +35,6 @@ nav {
 		right: 0;
 		padding: 0 20px;
 	}
-
 
 	a {
 		margin: 0 3px;
@@ -41,7 +48,6 @@ nav {
 			display: inline;
 			padding: 10px;
 		}
-
 
 		&.nav-toggle {
 			display: inline;
@@ -62,7 +68,6 @@ nav {
 	}
 
 	a:hover {
-
 		border-bottom: 1px solid rgba(255,255,255,.3);
 		color: #fff;
 	}
@@ -83,5 +88,252 @@ nav {
 		color: #fff;
 	}
 
+	// Dropdown Styles
+	.dropdown {
+		position: relative;
+		display: inline-block;
+
+		@media (max-width: #{$mid-point}) {
+			display: none;
+		}
+	}
+
+	.dropdown-trigger {
+		background: none;
+		border: none;
+		color: rgba(255,255,255,.8);
+		font-weight: inherit;
+		font-size: inherit;
+		text-transform: inherit;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+		padding: 10px;
+		transition: .2s ease-in-out;
+		margin: 0 3px;
+
+		&:hover {
+			border-bottom: 1px solid rgba(255,255,255,.3);
+			color: #fff;
+		}
+
+		&.highlight {
+			border: 1px #ccc solid;
+			border-radius: 5px;
+
+			&:hover {
+				background: #fff;
+				color: $brand-color;
+			}
+		}
+
+		&.active {
+			color: #fff;
+		}
+	}
+
+	.dropdown-icon {
+		width: 1rem;
+		height: 1rem;
+		transition: transform 0.2s ease;
+	}
+
+	.dropdown.active .dropdown-icon {
+		transform: rotate(180deg);
+	}
+
+	.dropdown-menu {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		min-width: 14rem;
+		background-color: white;
+		border: 1px solid #e5e7eb;
+		border-radius: 0.5rem;
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-10px);
+		transition: all 0.2s ease;
+		z-index: 100;
+	}
+
+	.dropdown.active .dropdown-menu {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+
+	.dropdown-item {
+		display: block;
+		padding: 0.75rem 1rem;
+		color: #374151;
+		text-decoration: none;
+		text-transform: none;
+		font-size: 0.875rem;
+		transition: background-color 0.2s ease;
+		margin: 0;
+		border: none;
+
+		&:hover {
+			background-color: #f3f4f6;
+			color: $brand-color;
+			border: none;
+		}
+	}
+
+	// Mobile Menu Styles
+	.mobile-menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: white;
+		border-top: 1px solid #e5e7eb;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease;
+		z-index: 50;
+
+		@media #{$mid-point} {
+			display: none;
+		}
+	}
+
+	.mobile-nav {
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.mobile-nav-link {
+		color: #374151;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 1.125rem;
+		padding: 0.5rem 0;
+		transition: color 0.2s ease;
+		display: block;
+		margin: 0;
+		border: none;
+		text-transform: none;
+
+		&:hover {
+			color: $brand-color;
+			border: none;
+		}
+
+		&.highlight {
+			background-color: $brand-color;
+			color: white;
+			padding: 0.75rem 1.5rem;
+			border-radius: 0.375rem;
+			text-align: center;
+			margin-top: 1rem;
+
+			&:hover {
+				background-color: darken($brand-color, 10%);
+				color: white;
+			}
+		}
+
+		&.active {
+			color: $brand-color;
+		}
+	}
+
+	// Mobile Dropdown
+	.mobile-dropdown {
+		display: block;
+	}
+
+	.mobile-dropdown-trigger {
+		background: none;
+		border: none;
+		color: #374151;
+		font-weight: 500;
+		font-size: 1.125rem;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0.5rem 0;
+		text-align: left;
+		text-transform: none;
+
+		&.highlight {
+			color: $brand-color;
+		}
+
+		&.active {
+			color: $brand-color;
+		}
+	}
+
+	.mobile-dropdown-icon {
+		width: 1rem;
+		height: 1rem;
+		transition: transform 0.2s ease;
+	}
+
+	.mobile-dropdown.active .mobile-dropdown-icon {
+		transform: rotate(180deg);
+	}
+
+	.mobile-dropdown-menu {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease;
+		padding-left: 1rem;
+	}
+
+	.mobile-dropdown.active .mobile-dropdown-menu {
+		max-height: 200px;
+	}
+
+	.mobile-dropdown-item {
+		display: block;
+		color: #6b7280;
+		text-decoration: none;
+		padding: 0.5rem 0;
+		transition: color 0.2s ease;
+		text-transform: none;
+		font-size: 1rem;
+		margin: 0;
+		border: none;
+
+		&:hover {
+			color: $brand-color;
+			border: none;
+		}
+	}
 }
 
+// CloudCannon editor styles
+.editor-link {
+	display: none;
+	margin-top: 0;
+
+	.btn {
+		border: 0;
+		border-radius: 2px;
+		width: 100%;
+		max-width: 500px;
+		box-sizing: border-box;
+		font-size: 2rem;
+		text-decoration: none;
+		padding: 10px 15px;
+		margin: 0;
+		font-size: 18px;
+		transition: .2s ease-in-out;
+		color: #fff;
+
+		&:hover {
+			opacity: 0.75;
+		}
+	}
+}
