@@ -90,11 +90,33 @@ nav {
 
 	// Dropdown Styles
 	.dropdown {
-		position: relative;
-		display: inline-block;
+		margin: 0 3px;
+		padding: 20px 10px;
+		border-bottom: 1px solid rgba(255,255,255,0);
+		color: rgba(255,255,255,.8);
+		transition: .2s ease-in-out;
+		display: none;
 
 		@media #{$mid-point} {
-			display: none;
+			display: inline;
+			padding: 10px;
+		}
+		
+		&.nav-toggle {
+			display: inline;
+			position: absolute;
+			right: 10px;
+			top: -22px;
+			font-size: 1.9em;
+			border: 0;
+
+			@media #{$mid-point} {
+				display: none;
+			}
+
+			&:hover {
+				border: 0;
+			}
 		}
 	}
 
