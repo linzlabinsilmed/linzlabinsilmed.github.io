@@ -106,14 +106,14 @@ nav {
 
 	// Dropdown Styles
 	.dropdown {
-		display: inline-flex;
-		  align-items: center;
+		display: block; // default for mobile
 		  position: relative;
 		  padding: 10px;
 		  margin: 0 3px;
 		
-		  @media (max-width: $mid-point) {
-		    display: block;
+		  @media #{$mid-point} {
+		    display: inline-flex;
+		    align-items: center;
 		  }
 		
 		&.nav-toggle {
