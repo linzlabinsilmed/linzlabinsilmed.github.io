@@ -93,7 +93,7 @@ nav {
 		position: relative;
 		display: inline-block;
 
-		@media (max-width: #{$mid-point}) {
+		@media #{$mid-point} {
 			display: none;
 		}
 	}
