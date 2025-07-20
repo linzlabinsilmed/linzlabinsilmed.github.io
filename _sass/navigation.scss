@@ -7,8 +7,12 @@
 		display: block;
 	}
 
-	button {
-		display: block;
+	.dropdown {
+		display: block; 
+		
+		button {
+			display: block;
+		}
 	}
 
 	@media #{$mid-point} {
@@ -19,8 +23,12 @@
 			display: inline;
 		}
 
-		button {
-			display: inline;
+		.dropdown {
+			display: inline; 
+			
+			button {
+				display: inline;
+			}
 		}
 	}
 
