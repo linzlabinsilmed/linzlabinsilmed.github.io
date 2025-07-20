@@ -106,17 +106,15 @@ nav {
 
 	// Dropdown Styles
 	.dropdown {
-		margin: 0 3px;
-		padding: 20px 10px;
-		border-bottom: 1px solid rgba(255,255,255,0);
-		color: rgba(255,255,255,.8);
-		transition: .2s ease-in-out;
-		display: none;
-
-		@media #{$mid-point} {
-			display: inline;
-			padding: 10px;
-		}
+		display: inline-flex;
+		  align-items: center;
+		  position: relative;
+		  padding: 10px;
+		  margin: 0 3px;
+		
+		  @media (max-width: $mid-point) {
+		    display: block;
+		  }
 		
 		&.nav-toggle {
 			display: inline;
