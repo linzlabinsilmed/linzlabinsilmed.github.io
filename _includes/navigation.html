@@ -12,8 +12,61 @@
     {% if link.link == page.url %}
       {% assign class = class | append: " active" %}
     {% endif %}
-    
-    <a href="{% include relative-src.html src=link.link %}" class="{{ class }} {% if link.children %} nav-toggle-button {% endif %}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
 
-	{% endfor %}
+    {% if link.children %}
+        <!-- Dropdown for links with children -->
+        <div class="dropdown">
+          <button class="dropdown-trigger nav-toggle-button{{ class }}" id="{{ link.name | downcase }}-dropdown">
+            {{ link.name }}
+            <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polyline points="6,9 12,15 18,9"></polyline>
+            </svg>
+          </button>
+	  <div class="dropdown-menu" id="{{ link.name | downcase }}-menu">
+            {% for child in link.children %}
+              <a href="{% include relative-src.html src=child.link %}" class="dropdown-item"{% if child.new_window %} target="_blank"{% endif %}>{{ child.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      {% else %}
+        <!-- Regular link -->
+        <a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-nav">
+      {% for link in site.data.navigation %}
+        {% assign class = "" %}
+        {% if link.highlight %}
+          {% assign class = class | append: " highlight" %}
+        {% endif %}
+        {% if link.link == page.url %}
+          {% assign class = class | append: " active" %}
+        {% endif %}
+
+        {% if link.children %}
+          <!-- Mobile Dropdown -->
+          <div class="mobile-dropdown">
+            <button class="mobile-dropdown-trigger{{ class }}" id="mobile-{{ link.name | downcase }}">
+              {{ link.name }}
+              <svg class="mobile-dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
+            <div class="mobile-dropdown-menu" id="mobile-{{ link.name | downcase }}-menu">
+              {% for child in link.children %}
+                <a href="{% include relative-src.html src=child.link %}" class="mobile-dropdown-item"{% if child.new_window %} target="_blank"{% endif %}>{{ child.name }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        {% else %}
+          <!-- Mobile Regular Link -->
+          <a href="{% include relative-src.html src=link.link %}" class="mobile-nav-link{{ class }}"{% if link.new_window %} target="_blank"{% endif %}>{{ link.name }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </nav>
