@@ -12,11 +12,11 @@
   highlight: false
   children:
     - title: Ablation therapies
-      url: /resources/tutorials/
+      url: /projects/ablation/
     - title: Extracorporeal Membrane Oxygenation 
-      url: /resources/docs/
+      url: /projects/ecmo/
     - title: Glioma Progression 
-      url: /resources/faq/
+      url: /projects/glioma/
 - name: Team
   link: /team/
   new_window: false
