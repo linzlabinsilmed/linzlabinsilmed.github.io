@@ -97,7 +97,7 @@ nav {
 
 	// Dropdown Styles
 	.dropdown {
-		display: block; // default for mobile
+		  display: none; // default for mobile
 		  position: relative;
 		
 		  @media #{$mid-point} {
