@@ -109,7 +109,8 @@ nav {
 		  position: relative;
 		
 		  @media #{$mid-point} {
-		    display: none;
+		    	display: inline-flex;
+		    	align-items: center;
 		  }
 		
 		&.nav-toggle {
