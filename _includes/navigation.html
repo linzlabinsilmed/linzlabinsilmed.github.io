@@ -13,6 +13,7 @@
       {% assign class = class | append: " active" %}
     {% endif %}
 
+    <!-- Desktop nav -->
     {% if link.children %}
         <!-- Dropdown for links with children -->
         <div class="dropdown">
@@ -35,7 +36,7 @@
     {% endfor %}
   </div>
 
-  <!-- Mobile Menu -->
+  <!-- Mobile nav -->
   <div class="mobile-menu" id="mobile-menu">
     <div class="mobile-nav">
       {% for link in site.data.navigation %}
