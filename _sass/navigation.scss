@@ -97,13 +97,12 @@ nav {
 
 	// Dropdown Styles
 	.dropdown {
-		  display: none; // default for mobile
-		  position: relative;
-		
-		  @media #{$mid-point} {
-		    	display: inline-flex;
-		    	align-items: center;
-		  }
+		position: relative;
+		display: inline-block;
+
+		@media (max-width: 620px) {
+			display: none;
+		}
 		
 		&.nav-toggle {
 			display: inline;
