@@ -1,10 +1,8 @@
 // Navigation Styles - Integrated with existing Jekyll structure
 
 .nav-open nav {
+	padding: 10px 0;
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
-	a {
-		display: block;
-	}
 
 	@media #{$mid-point} {
 		border: 0;
