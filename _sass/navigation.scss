@@ -1,7 +1,7 @@
 // Navigation Styles - Integrated with existing Jekyll structure
 
 .nav-open nav {
-	padding: 10px 0;
+	margin: 10px 0;
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
 	
 	a {
@@ -56,23 +56,6 @@ nav {
 		@media #{$mid-point} {
 			display: inline;
 			padding: 10px
-		}
-
-		&.nav-toggle {
-			display: inline;
-			position: absolute;
-			right: 10px;
-			top: -22px;
-			font-size: 1.9em;
-			border: 0;
-
-			@media #{$mid-point} {
-				display: none;
-			}
-
-			&:hover {
-				border: 0;
-			}
 		}
 	}
 
