@@ -107,8 +107,6 @@ nav {
 	.dropdown {
 		display: block; // default for mobile
 		  position: relative;
-		  padding: 10px;
-		  margin: 0 3px;
 		
 		  @media #{$mid-point} {
 		    display: inline-flex;
