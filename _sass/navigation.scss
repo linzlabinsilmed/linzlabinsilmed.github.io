@@ -5,6 +5,14 @@
 	a {
 		display: block;
 	}
+	
+	.dropdown {
+		display: block; 
+		
+		button {
+			display: block;
+		}
+	}
 
 	@media #{$mid-point} {
 		border: 0;
