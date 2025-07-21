@@ -3,6 +3,10 @@
 .nav-open nav {
 	padding: 10px 0;
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
+	
+	a {
+		display: none;
+	}
 
 	@media #{$mid-point} {
 		border: 0;
