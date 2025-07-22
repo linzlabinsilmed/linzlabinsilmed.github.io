@@ -80,6 +80,8 @@ nav {
 
 		&.highlight {
 			@media #{$mid-point} {
+				border: 1px #ccc solid;
+				border-radius: 5px;
 
 				&:hover {
 					background: #fff;
