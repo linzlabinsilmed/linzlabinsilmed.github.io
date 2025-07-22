@@ -1,34 +1,4 @@
-// Navigation Styles - Integrated with existing Jekyll structure
-
-.nav-open nav {
-	border-bottom: 1px dotted rgba(255, 255, 255, .2);
-	
-	a {
-		display: block;
-	}
-
-	@media #{$mid-point} {
-		border: 0;
-		padding: 0 20px;
-
-		a {
-			display: inline;
-		}
-	
-		.dropdown {
-			display: block; 
-			
-			button {
-				display: block;
-			}
-		}
-	}
-
-	// Show mobile menu when nav is open
-	.mobile-menu {
-		max-height: 500px;
-	}
-}
+// Navigation Styles - Fixed mobile duplication issue
 
 nav {
 	text-transform: uppercase;
@@ -44,82 +14,88 @@ nav {
 		padding: 0 20px;
 	}
 
-	a {
+	// Navigation toggle button (hamburger)
+	.nav-toggle {
+		display: inline;
+		position: absolute;
+		right: 10px;
+		top: -22px;
+		font-size: 1.9em;
+		border: 0 !important;
+		margin: 0 3px;
+		padding: 10px 10px;
+		color: rgba(255,255,255,.8);
+		transition: .2s ease-in-out;
+
+		@media #{$mid-point} {
+			display: none;
+		}
+
+		&:hover {
+			border: 0 !important;
+			color: #fff;
+		}
+	}
+
+	// Desktop navigation container
+	.nav-container {
+		display: none;
+
+		@media #{$mid-point} {
+			display: block;
+		}
+	}
+
+	// Show desktop nav container when nav is open on mobile
+	.nav-open & .nav-container {
+		display: none; // Keep hidden on mobile even when nav is open
+
+		@media #{$mid-point} {
+			display: block; // Show on desktop
+		}
+	}
+
+	// Base styles for desktop navigation links
+	.nav-container > a,
+	.dropdown {
 		margin: 0 3px;
 		padding: 10px 10px;
 		border-bottom: 1px solid rgba(255,255,255,0);
 		color: rgba(255,255,255,.8);
 		transition: .2s ease-in-out;
-		display: none;
+		display: inline-block;
 
 		@media #{$mid-point} {
-			display: inline;
-			padding: 10px
+			padding: 10px;
 		}
-		
-		&.nav-toggle {
-			display: inline;
-			position: absolute;
-			right: 10px;
-			top: -22px;
-			font-size: 1.9em;
-			border: 0;
 
+		&:hover {
+			border-bottom: 1px solid rgba(255,255,255,.3);
+			color: #fff;
+		}
+
+		&.active {
+			color: #fff;
+		}
+
+		&.highlight {
 			@media #{$mid-point} {
-				display: none;
-			}
+				border: 1px #ccc solid;
+				border-radius: 5px;
 
-			&:hover {
-				border: 0;
-			}
-		}
-	}
-
-	a:hover {
-		border-bottom: 1px solid rgba(255,255,255,.3);
-		color: #fff;
-	}
-
-	@media #{$mid-point} {
-		a.highlight {
-			border: 1px #ccc solid;
-			border-radius: 5px;
-
-			&:hover {
-				background: #fff;
-				color: $brand-color;
+				&:hover {
+					background: #fff;
+					color: $brand-color;
+					border-bottom: 1px #ccc solid;
+				}
 			}
 		}
-	}
-
-	a.active {
-		color: #fff;
 	}
 
 	// Dropdown Styles
 	.dropdown {
 		position: relative;
 		display: inline-block;
-
-		@media (max-width: 620px) {
-			display: none;
-		}
-		
-		&.nav-toggle {
-			display: inline;
-			position: relative;
-			top: -22px;
-			font-size: 1.9em;
-			border: 0;
-
-			@media #{$mid-point} {
-				display: none;
-			}
-
-			&:hover {
-				border: 0;
-			}
-		}
 	}
 
 	.dropdown-trigger {
@@ -143,12 +119,15 @@ nav {
 		}
 
 		&.highlight {
-			border: 1px #ccc solid;
-			border-radius: 5px;
+			@media #{$mid-point} {
+				border: 1px #ccc solid;
+				border-radius: 5px;
 
-			&:hover {
-				background: #fff;
-				color: $brand-color;
+				&:hover {
+					background: #fff;
+					color: $brand-color;
+					border-bottom: 1px #ccc solid;
+				}
 			}
 		}
 
@@ -224,6 +203,11 @@ nav {
 		@media #{$mid-point} {
 			display: none;
 		}
+	}
+
+	// Show mobile menu when nav is open
+	.nav-open & .mobile-menu {
+		max-height: 500px;
 	}
 
 	.mobile-nav {
