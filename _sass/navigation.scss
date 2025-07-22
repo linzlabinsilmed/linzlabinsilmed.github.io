@@ -22,7 +22,7 @@ nav {
 		top: -22px;
 		font-size: 1.9em;
 		border: 0 !important;
-		margin: 0 3px;
+		margin: -5px 3px;
 		padding: 0px 10px;
 		color: rgba(255,255,255,.8);
 		transition: .2s ease-in-out;
@@ -179,7 +179,6 @@ nav {
 		left: 0;
 		right: 0;
 		background-color: white;
-		border-top: 1px solid #e5e7eb;
 		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 		max-height: 0;
 		overflow: hidden;
@@ -193,7 +192,7 @@ nav {
 
 	// Show mobile menu when nav is open
 	.nav-open & .mobile-menu {
-		max-height: 500px;
+		max-height: 600px;
 	}
 
 	.mobile-nav {
