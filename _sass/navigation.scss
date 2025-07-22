@@ -112,6 +112,10 @@ nav {
 		padding: 0px;
 		transition: .2s ease-in-out;
 		margin: 0 0px;
+		
+		&:hover {
+			color: #fff;
+		}
 
 		&.active {
 			color: #fff;
