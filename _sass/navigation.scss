@@ -4,7 +4,7 @@
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
 	
 	a {
-		display: none;
+		display: block;
 	}
 
 	@media #{$mid-point} {
