@@ -20,18 +20,11 @@
       
 - title: Main Collaborators
   collaborators:
-    - name: Prof. Dr. Jose M. Guerra, MD
-      institute: Hospital de la Santa Creu i San Pau
-      country: Spain
-      image_path: https://media.licdn.com/dms/image/v2/D4D03AQG6R9ajQWHAlQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1667431454533?e=2147483647&v=beta&t=k521KXTu7Tb8zdN1DIjos9MeLygc-LC_aERy7N6JUt4
-    - name: Zoraida Moreno Weidmann, MD
-      institute: Hospital de la Santa Creu i San Pau
-      country: Spain
-      image_path: https://secardiologia.es/images/socios/zoraida-moreno-weidmann.jpg
-    - name: Dr. Gerard Amoros Figueras
-      institute: Hospital de la Santa Creu i San Pau
-      country: Spain
-      image_path: https://i1.rgstatic.net/ii/profile.image/304684185653262-1449653778472_Q512/Gerard-Amoros-Figueras.jpg
+    - https://www.dokuflex.com/wp-content/uploads/2018/12/logo-vector-hospital-de-la-santa-creu-i-sant-pau.jpg
+    - https://www.medunigraz.at/frontend/_processed_/5/b/csm_med-uni-logo_0134ecce35.png
+    - https://d2lk14jtvqry1q.cloudfront.net/media/small_Universitat_Pompeu_Fabra_of_Barcelona_f2f7e10ce2_0bcac34454.png
+    - https://mediaconnect.com/wp-content/uploads/2024/04/350413-1500x743.png.webp
+    - https://www.humantechnology.at/wp-content/uploads/2022/07/Numericor_logo-300x143.png
 
 - title: Publications
   publications: true
