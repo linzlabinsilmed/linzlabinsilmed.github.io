@@ -4,12 +4,51 @@ description: In-Silico simulation of VV-ECMO support system
 ---
 
 <div class="content">
-{% for project in site.data.projects.ecmo %}
+{% for project in site.data.projects.ablation %}
 	<section>
 		<div class="container flex">
 			<div class="text editable">
 				<h2><strong>{{ project.title }}</strong></h2>
 				<p>{{ project.description }}</p>
+				{% if project.members %}
+					<ul class="staff">
+					{% for person in project.members %}
+						<li>
+							<div class="square-image" style="height:150px;width:150px;"><a href="mailto:{{ person.email }}"  target="_blank" ><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}" style="height: 187.5px;width: auto;border-radius: 150px;object-position: top;"/></a></div>
+							<div class="name">{{ person.name }}</div>
+							<div class="position">{{ person.position }}</div>
+						</li>
+					{% endfor %}
+					</ul>
+				{% endif %}
+				{% if project.collaborators %}
+					<ul class="staff">
+					{% for person in project.collaborators %}
+						<li>
+							<div class="square-image" style="height:150px;width:150px;"><a href="mailto:{{ person.email }}"  target="_blank" ><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}" style="height: 187.5px;width: auto;border-radius: 150px;object-position: top;"/></a></div>
+							<div class="name">{{ person.name }}</div>
+							<div class="position">{{ person.institute }}</div>
+							<div class="position">{{ person.country }}</div>
+						</li>
+					{% endfor %}
+					</ul>
+				{% endif %}
+				{% if project.publications %}
+					<div class="container flex">
+					<ul>
+				        {% for paper in site.data.publications.ablation %}
+				      		<li style="margin-bottom: 1rem;">{{ paper.title }} <a href="https://doi.org/{{ paper.doi }}">{{ paper.doi }}</a></li>
+				  	{% endfor %}
+				      	</ul>
+					</div>
+				{% endif %}
+				{% if project.images %}
+					<div class="container flex" style="justify-content:center;align-items:center;gap:10px;">
+					{% for image in project.images %}
+             						<img src="{{ image }}" style="height:70px; width:auto;"/>
+           				{% endfor %}
+					</div>
+				{% endif %}
 			</div>
 		</div>
 	</section>
