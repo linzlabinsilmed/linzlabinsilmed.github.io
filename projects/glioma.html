@@ -4,7 +4,7 @@ description: Modelling and understanding of the underlying factors that trigger 
 ---
 
 <div class="content">
-{% for project in site.data.projects.ablation %}
+{% for project in site.data.projects.glioma %}
 	<section>
 		<div class="container flex">
 			<div class="text editable">
@@ -36,7 +36,7 @@ description: Modelling and understanding of the underlying factors that trigger 
 				{% if project.publications %}
 					<div class="container flex">
 					<ul>
-				        {% for paper in site.data.publications.ablation %}
+				        {% for paper in site.data.publications.glioma %}
 				      		<li style="margin-bottom: 1rem;">{{ paper.title }} <a href="https://doi.org/{{ paper.doi }}">{{ paper.doi }}</a></li>
 				  	{% endfor %}
 				      	</ul>
