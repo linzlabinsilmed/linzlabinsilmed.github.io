@@ -45,7 +45,7 @@ description: In-silico modelling of ablation treatments with specific focus on c
 				{% if project.images %}
 					<div class="container flex" style="justify-content:center;align-items:center;gap:10px;">
 					{% for image in project.images %}
-             						<img src="{{ image }}" style="height:70px; width:auto;"/>
+             						<img src="{{ image }}" style="max-width:100%; height:70px; width:auto;"/>
            				{% endfor %}
 					</div>
 				{% endif %}
