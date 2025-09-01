@@ -25,6 +25,17 @@
   link: /publications/
   new_window: false
   highlight: false
+- name: Resources
+  link: /resources/
+  new_window: false
+  highlight: false
+  children:
+    - name: Software
+      link: /resources/software/
+    - name: Documentation 
+      link: /resources/documentation/
+    - name: Tutorials
+      link: /resources/tutorials/
 - name: Contact
   link: /contact/
   new_window: false
