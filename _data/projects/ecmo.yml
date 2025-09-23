@@ -7,8 +7,20 @@
 - title: The Role of In-Silico Modelling
   description: Our team develops in-silico models to simulate the complex interactions between the VV-ECMO system and the patient’s cardiopulmonary physiology. These models integrate anatomical data and known physiological properties and allows us to study blood flow dynamics, recirculation and oxygen transport under various clinical settings. <br><br>Through close collaboration with clinicians in the intensive care unit (ICU), we aim to bridge the gap between computational simulations and clinical practice, contributing to more effective use of ECMO in critical care.
   
-- title: Team and Collaborators
+- title: Team Members
+  members:
+    - name: Dr. Beata Ondrusova 
+      position: Postdoctoral Fellow
+      image_path: https://www.jku.at/fileadmin/_processed_/6/9/csm_Photo_OndrusovaBeata_7e247c684d.jpg
+      email: beata.ondrusova@jku.at
+
+- title: Main Collaborators
+  collaborators:
+    - https://upload.wikimedia.org/wikipedia/commons/2/2a/Kepler_Universit%C3%A4ts-Klinikum_Logo-large-new.png
 
 - title: Publications
+  publications: true
 
 - title: Funding and Support
+  images:
+    - https://www.jku.at/fileadmin/gruppen/132/News/JKU_LIT_Logo_hoch_Blau.png
