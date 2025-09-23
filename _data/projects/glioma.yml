@@ -7,8 +7,13 @@
 - title: The Role of In-Silico Modelling
   description: Our team uses in-silico modelling to investigate how gliomas grow and progress within brain tissue. These computational models allow us to simulate tumor cell proliferation, invasion patterns, and interactions with the surrounding environment over time. By incorporating patient-specific anatomic models, we aim to better understand the spatial and temporal dynamics of glioma progression. <br><br>We work closely with neurologists to ensure our models reflect real clinical challenges, helping us gain deeper insight into glioma progression and support the development of more personalized treatment strategies.
   
-- title: Team and Collaborators
+- title: Team Members
+  members:
+    - name: Dr. Davide Baroli
+      position: Postdoctoral Fellow
+      image_path: https://www.oeaw.ac.at/fileadmin/Institute/RICAM/img/staff/dbaroli.png
+      email: davide.baroli@ricam.oeaw.ac.at
 
-- title: Publications
-
-- title: Funding and Support
+- title: Main Collaborators
+  collaborators:
+    - https://upload.wikimedia.org/wikipedia/commons/2/2a/Kepler_Universit%C3%A4ts-Klinikum_Logo-large-new.png
