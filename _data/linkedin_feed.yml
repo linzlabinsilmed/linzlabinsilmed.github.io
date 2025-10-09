@@ -1,4 +1,30 @@
 - title: >-
+    🌟 Research Visit 🌟 
+
+
+    September was a busy month for Argyrios Petras, ending with a visit to the
+    Instituto de Ingeniería Matemática y Computacional at the Pontificia
+    Universidad Católica de Chile from September 18 to 26.
+
+
+    Argyrios has a long-established collaboration with Nicolás Alejandro Barnafi
+    Wittwer, and this visit was a great opportunity to advance their ongoing
+    joint work. He also had the chance to discuss his research with colleagues
+    at the institute and gave a talk on Computational Methods for Cardiac
+    Catheter Ablation Procedures ❤️ 💻 .
+
+
+    A big thank you to Argyrios Petras for his hard work, and thanks to the 
+
+    Instituto de Ingeniería Matemática y Computacional, especially Nicolás
+    Alejandro Barnafi Wittwer, for the warm welcome 🤗 . We’re excited to see
+    the results of this collaboration! 
+
+
+    Recording of the talk: https://lnkd.in/ezmsxcAh
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_research-visit-september-was-a-busy-activity-7381659727740702722-Ld-i
+  published: 2025-10-08
+- title: >-
     Our team had the pleasure of participating in this year’s Computing in
     Cardiology! Argyrios Petras presented our lab’s current research through
     three talks:
@@ -257,70 +283,3 @@
     #ResearchCommunity #ThankYou #LabLife #AcademicResearch #Milestone
   url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_laserablation-biomedicalengineering-computationalmodeling-activity-7323315229700915200-A8pR
   published: 2025-04-30
-- title: >-
-    📄New Paper Alert!📄
-
-
-    We are excited to share our first study on laser ablation in cardiac tissue
-    in collaboration with Università Campus Bio-Medico di Roma! Laser ablation
-    is a promising technique for treating cardiac arrhythmias, offering high
-    precision and minimal invasiveness. However, traditional thermal models fall
-    short in predicting tissue response at fast time scales. As part of her PhD
-    work, Federica Bianconi designed a finite element computational model that
-    couples optical and thermal physics to better simulate how laser energy
-    interacts with heart tissue.
-
-
-    💡 What we did:
-
-    🔹 Developed a finite element model combining light propagation (using the
-    Optical Diffusion Approximation) with thermal bioheat transfer theories  -
-    including Fourier, Generalized Fourier, and a higher-order Dual Phase 
-
-    Lag (DPL) model.
-
-    🔹 Incorporated a three-state cell death model to map out how damage
-    progresses over time during laser ablation.
-
-    🔹Simulated cardiac tissue response and explored how tissue anisotropy
-    affects thermal spread.
-
-
-    🔎Key Insights from the Study:
-
-    🔹 The higher-order DPL model provides the most detailed and accurate
-    framework for predicting heat transfer in cardiac tissue.
-
-    🔹 Laser power modulation plays a crucial role in shaping lesion depth and 
-
-    precision - better control can minimize harm to surrounding healthy 
-
-    tissue.
-
-    🔹 Tissue fiber structure matters: anisotropic properties strongly
-    influence 
-
-    lesion geometry, reinforcing the need for personalized ablation strategies.
-
-
-    These advancements pave the way for personalised treatment planning and in
-    silico 💻 optimisation of laser ablation techniques. 
-
-
-    🤝 This work was made possible through the contributions of Massimiliano
-    Leoni, Argyrios Petras, Emiliano Schena, Luca Gerardo-Giorda, and Alessio
-    Gizzi.
-
-
-    We would like to congratulate Federica Bianconi on reaching this important
-    milestone and wish her continued success on her PhD journey! 👏 
-
-
-    📖 Read the full study here:
-
-    https://lnkd.in/eE-3DnzM
-
-
-    #LaserAblation #BiomedicalEngineering #ComputationalModeling #PaperAlert
-  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_jku-kuk-collaboration-activity-7320416105208942593-YlVb
-  published: 2025-04-22
