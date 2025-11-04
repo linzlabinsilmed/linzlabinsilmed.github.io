@@ -21,6 +21,10 @@
       position: PhD Student
       image_path: https://media.licdn.com/dms/image/v2/D4D03AQEoOL4kHmzLNw/profile-displayphoto-shrink_200_200/B4DZVoqYhpHAAY-/0/1741217696139?e=2147483647&v=beta&t=GKw9HhBpdrJDME5dO9ks5SjugDq9LXB3swng0L6xjwY
       email: luca.pasini@ricam.oeaw.ac.at
+    - name: Laura Füssel
+      position: MSc Student
+      image_path: https://media.licdn.com/dms/image/v2/D4D03AQG5cpbURKaIqg/profile-displayphoto-scale_200_200/B4DZjseMMOH4AY-/0/1756313995506?e=2147483647&v=beta&t=yiNySwOq1su5A27kfdddKC-xvzzB0JqtjP9cOZfYHW8
+      email: Laura.Fuessel@ricam.oeaw.ac.at
       
 - title: Main Collaborators
   collaborators:
