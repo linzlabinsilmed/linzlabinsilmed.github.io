@@ -47,6 +47,14 @@ description:
 				</svg>
   				</a>
 			{% endif %}
+			{% if person.cv %}
+				<a href="{{ person.cv }}" target="_blank" title="CV">
+				<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+				  <circle cx="100" cy="100" r="95" fill="none" stroke="black" stroke-width="6"/>
+				  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="80" font-weight="900" fill="black">CV</text>
+				</svg>
+  				</a>
+			{% endif %}
 			<a href="mailto:{{ person.email }}" target="_blank" title="Email">
 			<svg enable-background="new 0 0 40 40" height="33" id="Layer_1" version="1.1" viewBox="0 0 40 40" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<title>Email</title>	
