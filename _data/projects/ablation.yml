@@ -28,20 +28,22 @@
       
 - title: Main Collaborators
   collaborators:
-    - https://www.dokuflex.com/wp-content/uploads/2018/12/logo-vector-hospital-de-la-santa-creu-i-sant-pau.jpg
-    - https://d2lk14jtvqry1q.cloudfront.net/media/small_Universitat_Pompeu_Fabra_of_Barcelona_f2f7e10ce2_0bcac34454.png
-    - https://www.medunigraz.at/frontend/_processed_/5/b/csm_med-uni-logo_0134ecce35.png
-    - https://mediaconnect.com/wp-content/uploads/2024/04/350413-1500x743.png.webp
-    - https://www.humantechnology.at/wp-content/uploads/2022/07/Numericor_logo-300x143.png
-    - https://uniconexed.org/wp-content/uploads/2022/02/Pontificia-Universidad-Catolica-de-Chile-Logo.png
-    - https://ucbmacademy.unicampus.it/summer-school-artificial-intelligence/wp-content/uploads/sites/2/2025/03/logo-1024x308.png
+    - /photos/SanPau.png
+    - /photos/OK.png
+    - /photos/UPF.png
+    - /photos/MedUniGraz.webp
+    - /photos/Liryc.webp
+    - /photos/numericor.png
+    - /photos/PUC.webp
+    - /photos/CampusBiomedico.webp
 
 - title: Publications
   publications: true
 
 - title: Funding and Support
   images:
-    - https://lokahi-ts.com/_next/static/media/FFG_Logo_EN_RGB_1000px.ac34fcec.webp
-    - https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_BMBWF.svg/1200px-Logo_BMBWF.svg.png
-    - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvwRDYPc77BEgr7mIRcck3104Y-e6ut7Lbg&s
-    - https://www.upperaustria.com/fileadmin/_processed_/e/3/csm_Logo_upperuastria_RGB_300x300px_Websites_d446341d91.png
+    - /photos/FFG.png
+    - /photos/BMBWF.png
+    - /photos/FWF.png
+    - /photos/upperAustria.png
+    - /photos/EuroHPCJU..png
