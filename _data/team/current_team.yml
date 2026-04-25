@@ -31,14 +31,20 @@
   position: PhD Student
   image_path: https://www.oeaw.ac.at/fileadmin/Institute/RICAM/img/staff/manees.png
   linkedin: https://at.linkedin.com/in/minha-anees-msc-012662196
+  scholar: https://scholar.google.com/citations?user=XkQ_oWkAAAAJ
   email: minha.anees@ricam.oeaw.ac.at
 - name: Luca Pasini
   position: PhD Student
-  image_path: https://www.oeaw.ac.at/fileadmin/_processed_/5/0/csm_lpasini_44f987fe9d.png
+  image_path: https://www.oeaw.ac.at/fileadmin/Institute/RICAM/img/staff/lpasini.png
   linkedin: https://www.linkedin.com/in/luca-pasini-00b76533b
   email: luca.pasini@ricam.oeaw.ac.at
+- name: Michela Sabbatino
+  position: Visiting PhD Student
+  image_path: https://mbm.maths.unitn.it/assets/images/people_portraits/michelasabbatino.jpeg
+  linkedin: https://www.linkedin.com/in/michela-sabbatino-182b1b261
+  email: michela.sabbatino@unitn.it
 - name: Laura Füssel
   position: MSc Student
   image_path: https://media.licdn.com/dms/image/v2/D4D03AQG5cpbURKaIqg/profile-displayphoto-scale_200_200/B4DZjseMMOH4AY-/0/1756313995506?e=2147483647&v=beta&t=yiNySwOq1su5A27kfdddKC-xvzzB0JqtjP9cOZfYHW8
-  linkedin: https://at.linkedin.com/in/laura-füssel-0a1588291
+  linkedin: https://www.linkedin.com/in/laura-füssel-0a1588291
   email: Laura.Fuessel@ricam.oeaw.ac.at
