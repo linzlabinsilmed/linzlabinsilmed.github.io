@@ -11,9 +11,9 @@
   members:
     - name: Dr. Davide Baroli
       position: Postdoctoral Fellow
-      image_path: https://www.oeaw.ac.at/fileadmin/Institute/RICAM/img/staff/dbaroli.png
+      image_path: /photos/DB.png
       email: davide.baroli@ricam.oeaw.ac.at
 
 - title: Main Collaborators
   collaborators:
-    - https://upload.wikimedia.org/wikipedia/commons/2/2a/Kepler_Universit%C3%A4ts-Klinikum_Logo-large-new.png
+    - /photos/KUK.png

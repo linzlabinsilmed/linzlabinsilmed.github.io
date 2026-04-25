@@ -16,11 +16,11 @@
 
 - title: Main Collaborators
   collaborators:
-    - https://upload.wikimedia.org/wikipedia/commons/2/2a/Kepler_Universit%C3%A4ts-Klinikum_Logo-large-new.png
+    - /photos/KUK.png
 
 - title: Publications
   publications: true
 
 - title: Funding and Support
   images:
-    - https://www.jku.at/fileadmin/gruppen/132/News/JKU_LIT_Logo_hoch_Blau.png
+    - /photos/JKU_LIT.webp

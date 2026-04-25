@@ -1,6 +1,6 @@
 - name: Prof. Dr. Luca Gerardo-Giorda
   position: Team Leader
-  image_path: https://www.jku.at/fileadmin/gruppen/188/LGG.jpg
+  image_path: /photos/LGG.jpeg
   scholar: https://scholar.google.com/citations?user=vvxgrNUAAAAJ
   orcid: https://orcid.org/0000-0001-8467-1247
   linkedin: https://at.linkedin.com/in/luca-gerardo-giorda-60265b1
@@ -8,7 +8,7 @@
   email: luca.gerardo-giorda@jku.at
 - name: Dr. Argyrios Petras
   position: Postdoctoral Fellow
-  image_path: https://www.oeaw.ac.at/fileadmin/Institute/RICAM/img/staff/apetras.png
+  image_path: /photos/AP.png
   scholar: https://scholar.google.com/citations?user=1X7VU_QAAAAJ
   orcid: https://orcid.org/0000-0002-3278-620X
   linkedin: https://at.linkedin.com/in/argyrios-petras-12954a3a
@@ -22,20 +22,20 @@
   email: beata.ondrusova@jku.at
 - name: Dr. Davide Baroli
   position: Postdoctoral Fellow
-  image_path: https://www.oeaw.ac.at/fileadmin/Institute/RICAM/img/staff/dbaroli.png
+  image_path: /photos/DB.png
   scholar: https://scholar.google.com/citations?user=zkf73VkAAAAJ
   orcid: https://orcid.org/0000-0002-1889-145X
   linkedin: https://at.linkedin.com/in/davide-baroli-46782742
   email: davide.baroli@ricam.oeaw.ac.at
 - name: Minha Anees
   position: PhD Student
-  image_path: https://www.oeaw.ac.at/fileadmin/Institute/RICAM/img/staff/manees.png
+  image_path: /photos/MA.png
   linkedin: https://at.linkedin.com/in/minha-anees-msc-012662196
   scholar: https://scholar.google.com/citations?user=XkQ_oWkAAAAJ
   email: minha.anees@ricam.oeaw.ac.at
 - name: Luca Pasini
   position: PhD Student
-  image_path: https://www.oeaw.ac.at/fileadmin/Institute/RICAM/img/staff/lpasini.png
+  image_path: /photos/LP.png
   linkedin: https://www.linkedin.com/in/luca-pasini-00b76533b
   email: luca.pasini@ricam.oeaw.ac.at
 - name: Michela Sabbatino
@@ -45,6 +45,12 @@
   email: michela.sabbatino@unitn.it
 - name: Laura Füssel
   position: MSc Student
-  image_path: https://media.licdn.com/dms/image/v2/D4D03AQG5cpbURKaIqg/profile-displayphoto-scale_200_200/B4DZjseMMOH4AY-/0/1756313995506?e=2147483647&v=beta&t=yiNySwOq1su5A27kfdddKC-xvzzB0JqtjP9cOZfYHW8
+  image_path: /photos/LF.png
   linkedin: https://www.linkedin.com/in/laura-füssel-0a1588291
   email: Laura.Fuessel@ricam.oeaw.ac.at
+- name: Rainer Schelling
+  position: MSc Student
+  image_path: /photos/RS.png
+  linkedin: https://www.linkedin.com/in/rainer-schelling-064ab83b0
+  email: rainer.schelling@ricam.oeaw.ac.at
+
