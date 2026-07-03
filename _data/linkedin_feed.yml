@@ -1,4 +1,57 @@
 - title: >-
+    🤔 Can we reduce recirculation in VV-ECMO?  
+
+
+    In our latest study, we used computational modeling to investigate how
+    return cannula design can influence recirculation and oxygen delivery in
+    veno-venous extracorporeal membrane oxygenation (VV-ECMO).  
+
+
+    VV-ECMO is a life-support technique that temporarily replaces lung function
+    🫁 by oxygenating blood outside the body and returning it to the venous
+    circulation in patients with severe respiratory failure. However, not all of
+    this oxygen-rich blood reaches the systemic circulation. A portion can be
+    immediately drawn back into the drainage cannula and recirculate through the
+    ECMO circuit. This phenomenon is known as recirculation, and it reduces the
+    overall efficiency of oxygen delivery. 
+
+
+    Using computational modelling 💻, we compared commercial returning cannulas
+    with our novel performance-driven designs across different ECMO flow rates.
+    Results show that cannula design has a significant impact on VV-ECMO
+    performance, especially at higher flow rates. In particular, our prototypes
+    with closed tips showed reduced recirculation and increased oxygen
+    saturation, without a noticeable increase in complications such as
+    thrombosis or hemolysis. 
+
+
+    Thus, our findings suggest that there is still room for improvement in
+    return cannula design, and that some of our proposed designs could improve
+    VV-ECMO performance, mainly in patients who depend heavily on full
+    respiratory support due to severely impaired lung function. 
+
+
+    This work also highlights the importance of interdisciplinary collaboration
+    🤝, and we are grateful to the entire team from for their contributions.
+    Many thanks to Beata Ondrusova, Argyrios Petras, Johannes Szasz, Jens Meier,
+    and Luca Gerardo-Giorda! We look forward to continuing this collaboration
+    and bringing these results closer to clinical use 🚀.  
+
+
+    This work was supported by LIT SeedPlusMED ECMOPT from JKU – LIT Open
+    Innovation Center.  
+
+
+    Full paper: https://lnkd.in/deUHfdM9  
+
+    LinzLab website: https://lnkd.in/ekrHK43B 
+
+
+    #ECMO #VVECMO #CriticalCare #BiomedicalEngineering #ComputationalModeling
+    #CFD #MedicalDevices
+  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_ecmo-vvecmo-criticalcare-activity-7478417424887963648-Gsrm
+  published: 2026-07-02
+- title: >-
     ✨ CMBE 2026 ✨
 
 
@@ -306,38 +359,3 @@
     #LangeNachtDerForschung #LNF26 #Vienna #Science #Research #Innovation
   url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_internationalcollaboration-cardiacablation-activity-7440381563617411073-fEIE
   published: 2026-03-19
-- title: >-
-    🌍 On the road 🌍
-
-     
-
-    A busy and productive start of the month for our colleague Argyrios Petras,
-    who spent the past weeks in 🇪🇸 Spain and 🇩🇪 Germany strengthening
-    existing partnerships and building new international collaborations.
-
-
-    In Barcelona, Argyrios visited Hospital de la Santa Creu i Sant Pau, where
-    he met with Jose M Guerra, Zoraida Moreno Weidmann, and Gerard Amorós
-    Figueras. During his stay, he attended PFA experiments and ablation
-    procedures, including the first dual-energy procedure in Spain using the
-    Tactiflex Duo system! He also had several useful meetings that helped move
-    our joint research projects forward 🔬 
-
-
-    In Berlin, he visited Weierstrass Institute, where he worked closely with
-    Anieza Maltsi and delivered a presentation titled “Mathematical Modeling of
-    Cardiac Radiofrequency Ablation: From Patient-Specific Simulation to Porous
-    Media Tissue Formulations.” Our colleague Davide Baroli also joined
-    virtually, and our group initiated new collaborations with Matthias Liero,
-    Dirk Peschka, and Anieza Maltsi, along with engaging discussions with
-    Alfonso Caiazzo on potential future projects 🤝 
-
-
-    These visits showed how important it is to bring different people and ideas
-    together, especially when working on interdisciplinary topics. We’re excited
-    to build on these connections and keep the work going 🚀 
-
-
-    #InternationalCollaboration #CardiacAblation #InterdisciplinaryResearch
-  url: https://www.linkedin.com/posts/linz-lab-for-in-silico-medical-interventions_computationalmodeling-cardiacelectrophysiology-activity-7438161991275417600-2hkb
-  published: 2026-03-13
