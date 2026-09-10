@@ -38,11 +38,11 @@
   image_path: /photos/LP.png
   linkedin: https://www.linkedin.com/in/luca-pasini-00b76533b
   email: luca.pasini@ricam.oeaw.ac.at
-- name: Michela Sabbatino
-  position: Visiting PhD Student
-  image_path: https://mbm.maths.unitn.it/assets/images/people_portraits/michelasabbatino.jpeg
-  linkedin: https://www.linkedin.com/in/michela-sabbatino-182b1b261
-  email: michela.sabbatino@unitn.it
+- name: Matteo Micocci
+  position: PhD Student
+  image_path: /photos/MM.jpeg
+  linkedin: https://www.linkedin.com/in/matteo-micocci-67152123b
+  email: matteo.micocci@ricam.oeaw.ac.at
 - name: Laura Füssel
   position: MSc Student
   image_path: /photos/LF.png
