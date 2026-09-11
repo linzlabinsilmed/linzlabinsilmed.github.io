@@ -1,3 +1,11 @@
+- title: ECGI: The Impact of Electrode Reduction on the Inverse Solution
+  author: Michael Ratzenböck
+  supervisors: Beata Ondrusova, Luca Gerardo-Giorda
+  year: 2026
+- title: The Impact of Cannula Distance on Recirculation and Oxygen Saturation in VV-ECMO: A Patient-Specific CFD Study
+  author: Claudia Muttenthaler
+  supervisors: Beata Ondrusova, Luca Gerardo-Giorda
+  year: 2026
 - title: Catheter design affecting lesion shape in cardiac pulsed field ablation
   author: Teresa Bramberger
   supervisors: Luca Pasini, Argyrios Petras, Luca Gerardo-Giorda
@@ -6,6 +14,10 @@
   author: Tamas Kelemen
   supervisors: Davide Baroli, Argyrios Petras, Luca Gerardo-Giorda
   year: 2026
+- title: Patient-Specific Computational Assessment of Recirculation and Oxygen Saturation in VV-ECMO
+  author: Rainer Schelling
+  supervisors: Beata Ondrusova, Luca Gerardo-Giorda
+  year: 2025
 - title: In-silico comparison between in-vitro experiments and in-vivo application of radiofrequency ablation for the treatment of cardiac arrhythmia
   author: Laura Füssel
   supervisors: Argyrios Petras, Luca Gerardo-Giorda
